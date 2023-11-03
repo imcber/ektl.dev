@@ -59,8 +59,7 @@ const ImageSlider: React.FC = () => {
 						key={item.name}
 						isSame={itemSlider?.name === item.name}
 						handleClick={handleClick}
-						image={item.image}
-						name={item.name}
+						itemSlider={item}
 					/>
 				))}
 			</Slider>
