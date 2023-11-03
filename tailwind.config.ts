@@ -7,14 +7,14 @@ const config: Config = {
 		'./src/app/**/*.{js,ts,jsx,tsx,mdx}',
 	],
 	theme: {
-		colors: {
-			foreground: 'var(--foreground)',
-			principal: 'var(--principal)',
-			principal_light: 'var(--principal_light)',
-			secondary: 'var(--secondary)',
-			secondary_light: 'var(--secondary_light)',
-		},
 		extend: {
+			colors: {
+				foreground: 'var(--foreground)',
+				principal: 'var(--principal)',
+				principal_light: 'var(--principal_light)',
+				secondary: 'var(--secondary)',
+				secondary_light: 'var(--secondary_light)',
+			},
 			keyframes: {
 				move_right: {
 					'0%': { transform: 'translateX(0)' },
