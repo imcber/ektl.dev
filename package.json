@@ -1,5 +1,5 @@
 {
-	"name": "ektl-dev",
+	"name": "ekt-dev",
 	"version": "0.1.0",
 	"private": true,
 	"scripts": {
@@ -15,9 +15,7 @@
 		"next": "13.5.4",
 		"react": "^18",
 		"react-dom": "^18",
-		"react-i18next": "^13.2.2",
-		"react-slick": "^0.29.0",
-		"slick-carousel": "^1.8.1"
+		"react-i18next": "^13.2.2"
 	},
 	"devDependencies": {
 		"@types/node": "^20",

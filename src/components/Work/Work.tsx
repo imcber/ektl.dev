@@ -13,11 +13,11 @@ export const Work = async () => {
 	const { t } = await useTranslation({ language, ns: 'work' });
 
 	return (
-		<div className='h-screen block lg:flex lg:flex-col bg-secondary text-principal_light relative'>
-			<div className='w-full h-full lg:h-1/5 z-10 p-7 lg:p-14 flex justify-center items-center'>
+		<div className='min-h-screen block lg:flex lg:flex-col text-principal relative '>
+			<div className='w-full h-full lg:h-[10%] p-7 lg:p-14 flex justify-center lg:justify-start items-center'>
 				<h2 className='text-5xl'>WORK</h2>
 			</div>
-			<div className='lg:h-4/5 z-10 p-7 lg:p-14 '>
+			<div>
 				<ImageSlider />
 			</div>
 		</div>
