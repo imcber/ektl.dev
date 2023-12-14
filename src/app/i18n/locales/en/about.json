@@ -34,37 +34,5 @@
 			"description": "Favorite book",
 			"value": "The stranger by Albert Camus"
 		}
-	],
-	"age": {
-		"description": "Age",
-		"value": "27"
-	},
-	"name": {
-		"description": "Full name",
-		"value": "Ekatl Bernardo Ramirez Zavala"
-	},
-	"location": {
-		"description": "Location",
-		"value": "Pachuca, Hidalgo, Mexico"
-	},
-	"technologies": {
-		"description": "Main Technologies",
-		"value": "Java, JavaScript, SQL and Mongo"
-	},
-	"frameworks": {
-		"description": "Main Frameworks and Libraries",
-		"value": "React, Next, Node and Spring"
-	},
-	"languages": {
-		"description": "Languages",
-		"value": "Spanish: native, English: B1"
-	},
-	"hobbies": {
-		"description": "Hobbies",
-		"value": "Photography"
-	},
-	"books": {
-		"description": "Favorite book",
-		"value": "The stranger by Albert Camus"
-	}
+	]
 }

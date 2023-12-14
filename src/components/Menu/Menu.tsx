@@ -26,7 +26,7 @@ export const Menu = async ({}: Props) => {
 						))}
 					</span>
 				</div>
-				<div className='flex flex-col justify-center h-full w-max pl-1 md:pl-14 lg:pl-28'>
+				<div className='flex flex-col justify-center h-full pl-1 md:pl-14 lg:pl-28'>
 					{itemsMenu.map((item, index) => (
 						<a
 							key={item}

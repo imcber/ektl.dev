@@ -12,17 +12,18 @@ import RightArrow from '../../../public/right-arrow.svg';
 import LeftArrow from '../../../public/left-arrow.svg';
 
 export interface Project {
+	id: string;
 	name: string;
 	image: StaticImageData;
 }
 
-const ImageSlider: React.FC = () => {
+const ImageSlider = ({ workData }: any) => {
 	const projects: Project[] = [
-		{ name: 'TAR', image: TAR },
-		{ name: 'Nebular', image: Nebular },
-		{ name: 'Needed', image: Needed },
-		{ name: 'Uniken', image: Uniken },
-		{ name: 'Refer', image: Refer },
+		{ id: 'tar', name: 'TAR', image: TAR },
+		{ id: 'nebular', name: 'Nebular', image: Nebular },
+		{ id: 'needed', name: 'Needed', image: Needed },
+		{ id: 'uniken', name: 'Uniken', image: Uniken },
+		{ id: 'refer', name: 'Refer', image: Refer },
 	];
 
 	const [currentIndex, setCurrentIndex] = useState(0);
@@ -37,7 +38,7 @@ const ImageSlider: React.FC = () => {
 
 	return (
 		<div className={` bg-foreground overflow-hidden`}>
-			<div className='w-full h-[80vh] absolute flex justify-between'>
+			<div className='w-full h-[60vh] absolute flex justify-between'>
 				<Image
 					src={LeftArrow}
 					alt='left'
@@ -61,7 +62,7 @@ const ImageSlider: React.FC = () => {
 			>
 				{projects.map((project, index) => (
 					<div key={project.name}>
-						<div className='h-[80vh] w-screen relative lg:p-5'>
+						<div className='h-[60vh] w-screen relative lg:p-5'>
 							<div
 								className={`text-principal lg:pl-28 z-10 absolute top-20 lg:top-1/2`}
 								style={{ transform: 'translate(0, -50%)' }}
@@ -77,12 +78,10 @@ const ImageSlider: React.FC = () => {
 								/>
 							</div>
 						</div>
-						<div className='grid lg:grid-cols-3 gap-x-1 gap-y-6 lg:gap-y-28 py-8 lg:p-16'>
+						<div className='grid lg:grid-cols-3 gap-x-1 gap-y-6 lg:gap-y-28 p-8 lg:p-16'>
 							<p className='text-2xl lg:text-4xl'>About</p>
 							<p className='col-span-2 text-base lg:text-xl font-light text-secondary'>
-								Lorem ipsum dolor sit amet consectetur, adipisicing elit. Aspernatur, accusamus! Illo
-								temporibus labore culpa, obcaecati earum a cupiditate et exercitationem nobis veritatis facere
-								fugiat maiores alias aliquid eum sunt id.
+								{workData[project.id].about}
 							</p>
 							<p className='text-2xl lg:text-4xl'>Problematic</p>
 							<p className='col-span-2 text-base lg:text-xl font-light text-secondary'>
@@ -105,5 +104,3 @@ const ImageSlider: React.FC = () => {
 };
 
 export default ImageSlider;
-
-/*  */

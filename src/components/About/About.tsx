@@ -2,7 +2,7 @@ import { useTranslation } from '@/app/i18n';
 import { useLanguage } from '@/context/LanguageContext';
 import React from 'react';
 import Image from 'next/image';
-import photo from '../../../public/photo.jpg';
+import photo from '../../../public/PA070155.jpeg';
 
 interface AboutAttributes {
 	description: string;
@@ -18,7 +18,7 @@ export const About = async () => {
 
 	return (
 		<div className='h-auto block lg:flex bg-secondary'>
-			<Image className='h-1/2 w-full lg:w-5/12 h-auto' src={photo} alt='My photo' priority />
+			<Image className='h-1/2 w-full lg:w-5/12 h-auto object-cover' src={photo} alt='My photo' priority />
 			<div className='w-full lg:w-7/12 flex flex-col z-10 p-7 lg:p-14'>
 				<p className='text-5xl text-principal_light'>{t('hello')}</p>
 				<p className='text-2xl text-foreground leading-9 font-light mx-0 my-7 lg:m-14'>{t('about')}</p>
