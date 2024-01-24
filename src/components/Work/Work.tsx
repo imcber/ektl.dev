@@ -10,7 +10,7 @@ export const Work = async () => {
 	const workData = t<any, any, any>('work', { returnObjects: true });
 
 	return (
-		<div className='min-h-screen block lg:flex lg:flex-col text-principal relative '>
+		<div className='h-auto block lg:flex lg:flex-col text-principal relative '>
 			<div className='w-full h-full lg:h-[10%] p-7 lg:p-14 flex justify-center lg:justify-start items-center'>
 				<h2 className='text-5xl'>{t('page')}</h2>
 			</div>

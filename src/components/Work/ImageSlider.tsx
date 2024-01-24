@@ -3,11 +3,9 @@
 import React, { useState } from 'react';
 import Image, { StaticImageData } from 'next/image';
 
-import Nebular from '../../../public/Nebular.jpg';
 import Needed from '../../../public/Needed.jpg';
 import TAR from '../../../public/TAR.jpg';
 import Uniken from '../../../public/Uniken.jpg';
-import Refer from '../../../public/Refer.jpg';
 import RightArrow from '../../../public/right-arrow.svg';
 import LeftArrow from '../../../public/left-arrow.svg';
 
@@ -20,10 +18,8 @@ export interface Project {
 const ImageSlider = ({ workData }: any) => {
 	const projects: Project[] = [
 		{ id: 'tar', name: 'TAR', image: TAR },
-		{ id: 'nebular', name: 'Nebular', image: Nebular },
 		{ id: 'needed', name: 'Needed', image: Needed },
 		{ id: 'uniken', name: 'Uniken', image: Uniken },
-		{ id: 'refer', name: 'Refer', image: Refer },
 	];
 
 	const [currentIndex, setCurrentIndex] = useState(0);
@@ -83,17 +79,9 @@ const ImageSlider = ({ workData }: any) => {
 							<p className='col-span-2 text-base lg:text-xl font-light text-secondary'>
 								{workData[project.id].about}
 							</p>
-							<p className='text-2xl lg:text-4xl'>Problematic</p>
+							<p className='text-2xl lg:text-4xl'>Task</p>
 							<p className='col-span-2 text-base lg:text-xl font-light text-secondary'>
-								Lorem ipsum dolor sit amet consectetur, adipisicing elit. Aspernatur, accusamus! Illo
-								temporibus labore culpa, obcaecati earum a cupiditate et exercitationem nobis veritatis facere
-								fugiat maiores alias aliquid eum sunt id.
-							</p>
-							<p className='text-2xl lg:text-4xl'>Solution</p>
-							<p className='col-span-2 text-base lg:text-xl font-light text-secondary'>
-								Lorem ipsum dolor sit amet consectetur, adipisicing elit. Aspernatur, accusamus! Illo
-								temporibus labore culpa, obcaecati earum a cupiditate et exercitationem nobis veritatis facere
-								fugiat maiores alias aliquid eum sunt id.
+								{workData[project.id].task}
 							</p>
 						</div>
 					</div>

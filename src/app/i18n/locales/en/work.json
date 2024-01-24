@@ -2,29 +2,16 @@
 	"page": "WORK",
 	"work": {
 		"tar": {
-			"about": "TAAAR",
-			"problematic": "",
-			"solution": ""
-		},
-		"nebular": {
-			"about": "NEEBULAR",
-			"problematic": "",
-			"solution": ""
-		},
-		"needed": {
-			"about": "NEEDED",
-			"problematic": "",
-			"solution": ""
+			"about": "Tar is a flight reservation system developed using Spring and ReactJS. This platform facilitates seamless flight bookings with a variety of payment options, including credit/debit cards, cash, and cryptocurrency.",
+			"task": "In the Tar project, backend involve adding features in payments, invoice alongside bug fixes. Optimizing Jenkins pipelines is crucial for smoother deployments. On the frontend, refactoring class components to hooks, improving state management, and refining client request."
 		},
 		"uniken": {
-			"about": "UUNIIKEN",
-			"problematic": "",
-			"solution": ""
+			"about": "Uniken is a platform that facilitates document validation. It allows for the creation of timestamps and signatures to ensure their validity.",
+			"task": "Basically, we developed document control."
 		},
-		"refer": {
-			"about": "REEFER",
-			"problematic": "",
-			"solution": ""
+		"needed": {
+			"about": "Needed is a learning and evaluation platform developed with Next.js and Node.js. It allows access to training, courses, and certifications through an information package.",
+			"task": "I mainly focused on developing an SSO for easy access, as well as resolving existing bugs."
 		}
 	}
 }
