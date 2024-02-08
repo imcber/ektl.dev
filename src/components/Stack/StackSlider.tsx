@@ -1,10 +1,10 @@
-'use client';
+"use client";
 
-import Image, { StaticImageData } from 'next/image';
-import React, { useEffect, useState } from 'react';
+import Image, { StaticImageData } from "next/image";
+import React, { useEffect, useState } from "react";
 
-import RightArrow from '../../../public/right-arrow.svg';
-import LeftArrow from '../../../public/left-arrow.svg';
+import RightArrow from "../../../public/right-arrow.svg";
+import LeftArrow from "../../../public/left-arrow.svg";
 
 export interface Tech {
 	id: string;
@@ -15,14 +15,14 @@ export interface Tech {
 
 export const StackSlider = () => {
 	const techs: Tech[] = [
-		{ id: 'js', name: 'Javascript', experience: 5, skill: 'advanced' },
-		{ id: 'java', name: 'Java', experience: 5, skill: 'advanced' },
-		{ id: 'react', name: 'ReactJS', experience: 3, skill: 'advanced' },
-		{ id: 'next', name: 'NextJs', experience: 2, skill: 'medium' },
-		{ id: 'spring', name: 'Spring', experience: 3, skill: 'medium' },
-		{ id: 'nodejs', name: 'Nodejs', experience: 3, skill: 'medium' },
-		{ id: 'mongo', name: 'Mongo', experience: 2, skill: 'medium' },
-		{ id: 'sql', name: 'SQL', experience: 4, skill: 'medium' },
+		{ id: "js", name: "Javascript", experience: 5, skill: "advanced" },
+		{ id: "java", name: "Java", experience: 5, skill: "advanced" },
+		{ id: "react", name: "ReactJS", experience: 3, skill: "advanced" },
+		{ id: "next", name: "NextJs", experience: 2, skill: "medium" },
+		{ id: "spring", name: "Spring", experience: 3, skill: "medium" },
+		{ id: "nodejs", name: "Nodejs", experience: 3, skill: "medium" },
+		{ id: "mongo", name: "Mongo", experience: 2, skill: "medium" },
+		{ id: "sql", name: "SQL", experience: 4, skill: "medium" },
 	];
 
 	const [currentIndex, setCurrentIndex] = useState(0);
@@ -47,7 +47,7 @@ export const StackSlider = () => {
 					<div
 						key={id}
 						className={`w-96 h-96 border-2 border-secondary rounded-2xl p-7 m-3 text-secondary flex flex-col justify-between relative ${
-							currentIndex === index ? 'bg-principal_light' : 'bg-foreground'
+							currentIndex === index ? "bg-principal" : "bg-foreground"
 						}`}
 					>
 						<h1 className='text-5xl'>{name}</h1>

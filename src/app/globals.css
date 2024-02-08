@@ -5,11 +5,10 @@
 @import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap');
 
 :root {
-	--foreground: #fefae0;
-	--principal: #bc6c25;
-	--principal_light: #dda15e;
-	--secondary: #283618;
-	--secondary_light: #606c38;
+	--foreground: #10160a;
+	--principal: #fffdf9;
+	--secondary: #3a5f4a;
+	--secondary_light: #8a8987;
 }
 
 body {
