@@ -1,6 +1,9 @@
 {
-	"about": "ACERCA",
-	"work": "TRABAJO",
-	"stack": "STACK",
-	"contact": "CONTACTO"
+	"hello": "Hola! Soy",
+	"name":" Bernardo,",
+    "rest":" pero dime",
+	"alias": " Lizard",
+	"i_am":"Soy un desarrollador Frontend & Backend",
+	"projects" : "proyectos",
+	"about_me": " mas sobre mi"
 }

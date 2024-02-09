@@ -1,6 +1,9 @@
 {
-	"about": "ABOUT",
-	"work": "WORK",
-	"stack": "STACK",
-	"contact": "CONTACT"
+	"hello": "Hey! I'm",
+	"name":" Bernardo,",
+	"rest":" but call me",
+	"alias": " Lizard",
+	"i_am":"I'm a Frontend & Backend developer",
+	"projects" : "projects",
+	"about_me": " more about me"
 }
