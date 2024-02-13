@@ -1,5 +1,5 @@
-import React, { createServerContext, useContext, ReactNode, ServerContextJSONValue } from 'react';
-import { fallbackLng } from '../app/i18n/settings';
+import React, { createServerContext, useContext, ReactNode } from "react";
+import { fallbackLng } from "../app/i18n/settings";
 
 type Language = string;
 
@@ -13,7 +13,7 @@ interface ProviderProps {
 	initialValue: Language;
 }
 
-const LanguageContext = createServerContext('language', { language: fallbackLng });
+const LanguageContext = createServerContext("language", { language: fallbackLng });
 
 export const LanguageProvider: React.FC<ProviderProps> = ({ children, initialValue }) => {
 	return <LanguageContext.Provider value={{ language: initialValue }}>{children}</LanguageContext.Provider>;
@@ -22,7 +22,7 @@ export const LanguageProvider: React.FC<ProviderProps> = ({ children, initialVal
 export function useLanguage() {
 	const context = useContext(LanguageContext);
 	if (context === undefined) {
-		throw new Error('useLanguage must be used within a LanguageProvider');
+		throw new Error("useLanguage must be used within a LanguageProvider");
 	}
 	return context;
 }
