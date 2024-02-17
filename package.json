@@ -9,6 +9,8 @@
 		"lint": "next lint"
 	},
 	"dependencies": {
+		"@splinetool/react-spline": "^2.2.6",
+		"@splinetool/runtime": "^1.0.53",
 		"accept-language": "^3.0.18",
 		"i18next": "^23.5.1",
 		"i18next-resources-to-backend": "^1.1.4",

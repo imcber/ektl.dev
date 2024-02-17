@@ -1,7 +1,7 @@
 "use client";
 
-import Image, { StaticImageData } from "next/image";
-import React, { useEffect, useState } from "react";
+import Image from "next/image";
+import React, { useState } from "react";
 
 import RightArrow from "../../../public/right-arrow.svg";
 import LeftArrow from "../../../public/left-arrow.svg";
