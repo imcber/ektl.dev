@@ -3,9 +3,11 @@
 import React, { useState } from "react";
 import Image, { StaticImageData } from "next/image";
 
-import Needed from "../../../public/Needed.jpg";
-import TAR from "../../../public/TAR.jpg";
+import Ganalottodo from "../../../public/work/ganalottodo.png";
+import Needed from "../../../public/work/needed.jpeg";
+import TAR from "../../../public/work/TAR.png";
 import Uniken from "../../../public/Uniken.jpg";
+
 import RightArrow from "../../../public/right-arrow.svg";
 import LeftArrow from "../../../public/left-arrow.svg";
 
@@ -20,6 +22,7 @@ const ImageSlider = ({ workData }: any) => {
 		{ id: "tar", name: "TAR", image: TAR },
 		{ id: "needed", name: "Needed", image: Needed },
 		{ id: "uniken", name: "Uniken", image: Uniken },
+		{ id: "ganalottodo", name: "Ganalottodo", image: Ganalottodo },
 	];
 
 	const [currentIndex, setCurrentIndex] = useState(0);

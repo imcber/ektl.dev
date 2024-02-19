@@ -12,6 +12,10 @@
 		"needed": {
 			"about": "Needed es una plataforma de aprendizaje y evaluación desarrollada con Next.js y Node.js. Permite acceder a capacitaciones, cursos y certificaciones mediante un paquete de información",
 			"task": "Me dediqué principalmente al desarrollo de un SSO para facilitar el acceso, además de resolver errores existentes."
+		},
+		"ganalottodo": {
+			"about": "Needed es una plataforma de aprendizaje y evaluación desarrollada con Next.js y Node.js. Permite acceder a capacitaciones, cursos y certificaciones mediante un paquete de información",
+			"task": "Me dediqué principalmente al desarrollo de un SSO para facilitar el acceso, además de resolver errores existentes."
 		}
 	}
 }
