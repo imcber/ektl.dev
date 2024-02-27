@@ -1,45 +1,47 @@
-import { useTranslation } from '@/app/i18n';
-import { useLanguage } from '@/context/LanguageContext';
-import Image from 'next/image';
-import React from 'react';
+import { useTranslation } from "@/app/i18n";
+import { useLanguage } from "@/context/LanguageContext";
+import Image from "next/image";
+import React from "react";
 
-import Mail from '../../../public/contact/mail.svg';
-import Location from '../../../public/contact/location.svg';
-import Linkedin from '../../../public/contact/linkedin.svg';
-import Github from '../../../public/contact/github.svg';
-import Instagram from '../../../public/contact/instagram.svg';
+import Mail from "../../../public/contact/mail.svg";
+import Location from "../../../public/contact/location.svg";
+import Linkedin from "../../../public/contact/linkedin.svg";
+import Github from "../../../public/contact/github.svg";
+import Instagram from "../../../public/contact/instagram.svg";
+
+import RightArrowOut from "../../../public/right-arrow-principal-color.svg";
 
 export const Contact = async () => {
 	const { language } = useLanguage();
-	const { t } = await useTranslation({ language, ns: 'contact' });
+	const { t } = await useTranslation({ language, ns: "contact" });
 
 	return (
-		<div className='h-auto bg-secondary text-foreground'>
-			<div className='lg:h-full w-full lg:w-1/3 flex items-start justify-center lg:justify-start p-7 lg:p-14'>
-				<p className='text-5xl '>{t('page')}</p>
+		<div className='h-auto text-principal p-7 lg:px-28'>
+			<div className='h-full w-full flex items-start justify-start border-b-2 pb-5'>
+				<p className='text-6xl [-webkit-text-stroke-width:2px] [-webkit-text-stroke-color:--principal] font-bold text-transparent'>{t("page")}</p>
 			</div>
-			<div className='flex flex-col lg:flex-row items-center'>
-				<div className='lg:pb-14 lg:px-28 w-auto'>
-					<span className='flex items-center'>
-						<Image src={Mail} width={50} alt='mail' className='mr-3' />
-						<p>ekatl.ramirez@gmail.com</p>
-					</span>
-					<span className='flex items-center mt-3'>
-						<Image src={Location} width={50} alt='location' className='mr-3' />
-						<p>Pachuca, Hidalgo, Mexico</p>
-					</span>
+			<div className='flex flex-col lg:flex-row justify-around py-8 lg:p-8 items-start'>
+				<div className='flex items-center pb-5 lg:p-0'>
+					<p className='font-bold pr-12 text-3xl '>Mail</p>
+					<p className='text-xl'>ekatl.ramirez@gmail.com</p>
 				</div>
-				<span className='flex my-14 lg:pb-14 lg:px-28 w-auto'>
-					<a href=''>
-						<Image className='mx-3' src={Linkedin} width={50} alt='linkedin' />
-					</a>
-					<a href=''>
-						<Image className='mx-3' src={Github} width={50} alt='github' />
-					</a>
-					<a href=''>
-						<Image className='mx-3' src={Instagram} width={50} alt='instagram' />
-					</a>
-				</span>
+				<div className='flex'>
+					<p className='font-bold pr-12 text-3xl'>Social</p>
+					<div>
+						<a href='https://www.linkedin.com/in/imcber/' target='_blank' className='cursor-pointer flex text-xl py-2'>
+							Linkedin
+							<Image src={RightArrowOut} width={20} alt='mail' />
+						</a>
+						<a href='https://www.instagram.com/imcber1/' target='_blank' className='cursor-pointer flex text-xl py-2'>
+							Instagram
+							<Image src={RightArrowOut} width={20} alt='mail' />
+						</a>
+						<a href='https://github.com/imcber' target='_blank' className='cursor-pointer flex text-xl py-2'>
+							Github
+							<Image src={RightArrowOut} width={20} alt='mail' />
+						</a>
+					</div>
+				</div>
 			</div>
 		</div>
 	);

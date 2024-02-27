@@ -1,21 +1,30 @@
 {
 	"page": "WORK",
 	"work": {
+		"year": "Year",
+		"rol": "Rol",
+		"about": "About",
+		"task": "Task",
 		"tar": {
-			"about": "Tar is a flight reservation system developed using Spring and ReactJS. This platform facilitates seamless flight bookings with a variety of payment options, including credit/debit cards, cash, and cryptocurrency.",
-			"task": "In the Tar project, backend involve adding features in payments, invoice alongside bug fixes. Optimizing Jenkins pipelines is crucial for smoother deployments. On the frontend, refactoring class components to hooks, improving state management, and refining client request."
-		},
-		"uniken": {
-			"about": "Uniken is a platform that facilitates document validation. It allows for the creation of timestamps and signatures to ensure their validity.",
-			"task": "Basically, we developed document control."
+			"about": "Tar is a flight booking system developed using technologies such as Java and JavaScript. Tar allows flight reservations and offers a variety of payment types such as credit/debit cards, cash, and cryptocurrencies.",
+			"task": "In TAR, backend improvements involve adding functionalities in payments, billing, as well as fixing bugs. Optimizing deployment flows is crucial for a smoother system. In the frontend, refactoring class components to hooks, improving state management, and perfecting client requests.",
+			"year": "2022 - Today",
+			"rol": "Fullstack",
+			"url": "https://tarmexico.com/"
 		},
 		"needed": {
-			"about": "Needed is a learning and evaluation platform developed with Next.js and Node.js. It allows access to training, courses, and certifications through an information package.",
-			"task": "I mainly focused on developing an SSO for easy access, as well as resolving existing bugs."
+			"about": "Needed is a learning and assessment platform developed with JavaScript and TypeScript technologies. It provides access to training, courses, and certifications through an information package.",
+			"task": "The system was primarily developed to facilitate the exchange of information the company had with its users; however, this system was composed of different patterns such as SSO and development of formulas for evaluation. During this project, I focused mainly on system maintenance.",
+			"year": "2022 - 2023",
+			"rol": "Fullstack",
+			"url": "https://needed.education/"
 		},
 		"ganalottodo": {
-			"about": "Needed is a learning and evaluation platform developed with Next.js and Node.js. It allows access to training, courses, and certifications through an information package.",
-			"task": "I mainly focused on developing an SSO for easy access, as well as resolving existing bugs."
+			"about": "Ganalottodo is a site authorized by Pronósticos that allows users to participate in and enjoy their preferred games and draws. During 2022, we developed a ticket distribution system for the raffle of tickets for that year's World Cup, the product was called 'Lánzate al mundial'.",
+			"task": "I entered this project mainly for the development of the raffle system for the World Cup, adding different functions for the correct selection of the winner. Once the product was finished, I maintained the platform's services.",
+			"year": "2021 - 2022",
+			"rol": "Backend",
+			"url": "https://www.ganalottodo.com/#/landing/home"
 		}
 	}
 }

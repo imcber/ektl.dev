@@ -1,21 +1,30 @@
 {
 	"page": "Proyectos",
 	"work": {
+		"year": "Tiempo",
+		"rol": "Rol",
+		"about": "Acerca",
+		"task": "Actividad",
 		"tar": {
-			"about": "Tar es un sistema de reservas de vuelo desarrollado con Spring y ReactJS. Tar permite realizar reservas de vuelos y ofrece una variedad de tipos de pago que como tarjetas de crédito/débito, efectivo y criptomonedas.",
-			"task": "En Tar, las mejoras en el backend implican añadir funcionalidades en los pagos, facturación, además de corregir errores. Optimizar los flujos de Jenkins es fundamental para despliegues más fluidos. En el frontend, refactorizar los componentes de clase a hooks, mejorar la gestión del estado y perfeccionar las solicitudes del cliente."
-		},
-		"uniken": {
-			"about": "Uniken es una plataforma que facilita la validación de documentos. Permite la creación de sellos de tiempo y firmas para garantizar su validez.",
-			"task": "Básicamente desarrollamos el control de documentos."
+			"about": "Tar es un sistema de reservas de vuelo desarrollado utilizando tecnologías como Java y JavaScript. Tar permite realizar reservas de vuelos y ofrece una variedad de tipos de pago como tarjetas de crédito/débito, efectivo y criptomonedas.",
+			"task": "En TAR, las mejoras en el backend implican añadir funcionalidades en los pagos, facturación, además de corregir errores. Optimizar los flujos de despliegue es fundamental para un sistema más fluido. En el frontend, refactorizar los componentes de clase a hooks, mejorar la gestión del estado y perfeccionar las solicitudes del cliente.",
+			"year": "2022 - Hoy",
+			"rol": "Fullstack",
+			"url": "https://tarmexico.com/"
 		},
 		"needed": {
-			"about": "Needed es una plataforma de aprendizaje y evaluación desarrollada con Next.js y Node.js. Permite acceder a capacitaciones, cursos y certificaciones mediante un paquete de información",
-			"task": "Me dediqué principalmente al desarrollo de un SSO para facilitar el acceso, además de resolver errores existentes."
+			"about": "Needed es una plataforma de aprendizaje y evaluación desarrollada con tecnologías JavaScript y TypeScript. Permite acceder a capacitaciones, cursos y certificaciones mediante un paquete de información.",
+			"task": "El sistema se desarrolló principalmente para facilitar el intercambio de información que tenía la empresa con sus usuarios; sin embargo, este sistema se compuso de diferentes patrones como SSO y desarrollo de fórmulas para evaluación. Durante este proyecto, me enfoque principalmente en el mantenimiento del sistema.",
+			"year": "2022 - 2023",
+			"rol": "Fullstack",
+			"url": "https://needed.education/"
 		},
 		"ganalottodo": {
-			"about": "Needed es una plataforma de aprendizaje y evaluación desarrollada con Next.js y Node.js. Permite acceder a capacitaciones, cursos y certificaciones mediante un paquete de información",
-			"task": "Me dediqué principalmente al desarrollo de un SSO para facilitar el acceso, además de resolver errores existentes."
+			"about": "Ganalottodo es un sitio autorizado por Pronósticos que permite a los usuarios participar y disfrutar de los juegos y sorteos de su preferencia. Durante 2022 desarrollamos un sistema de distribución de boletos para la rifa de unos boletos para el mundial de ese mismo año, el producto se llamó 'Lánzate al mundial'.",
+			"task": "Entré en este proyecto principalmente para el desarrollo del sistema de rifas para el mundial, agregando diferentes funciones para la correcta selección del ganador. Una vez terminado el producto, le di mantenimiento a los servicios de la plataforma.",
+			"year": "2021 - 2022",
+			"rol": "Backend",
+			"url": "https://www.ganalottodo.com/#/landing/home"
 		}
 	}
 }

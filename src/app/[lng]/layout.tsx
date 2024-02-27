@@ -1,14 +1,14 @@
-import '../globals.css';
-import type { Metadata } from 'next';
-import { Inter } from 'next/font/google';
-import { dir } from 'i18next';
-import { languages } from '../i18n/settings';
+import "../globals.css";
+import type { Metadata } from "next";
+import { Inter } from "next/font/google";
+import { dir } from "i18next";
+import { languages } from "../i18n/settings";
 
-const inter = Inter({ subsets: ['latin'] });
+const inter = Inter({ subsets: ["latin"] });
 
 export const metadata: Metadata = {
-	title: 'ektl.dev',
-	description: 'Portfolio of ektl.dev',
+	title: "ektl.dev",
+	description: "Portfolio of ektl.dev",
 };
 
 export async function generateStaticParams() {
@@ -24,7 +24,7 @@ export type Params = {
 };
 export default function RootLayout({ children, params: { lng } }: Props) {
 	return (
-		<html lang={lng} dir={dir(lng)}>
+		<html lang={lng} dir={dir(lng)} className='scroll-smooth'>
 			<body className={inter.className} suppressHydrationWarning={true}>
 				{children}
 			</body>

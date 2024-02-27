@@ -3,8 +3,8 @@
 import Image from "next/image";
 import React, { useState } from "react";
 
-import RightArrow from "../../../public/right-arrow.svg";
-import LeftArrow from "../../../public/left-arrow.svg";
+import RightArrow from "../../../public/right-arrow-secondary-color.svg";
+import LeftArrow from "../../../public/left-arrow-secondary-color.svg";
 
 export interface Tech {
 	id: string;

@@ -28,13 +28,13 @@ export const Menu = async ({}: Props) => {
 					<h2 className='text-xl text-principal w-2/3 lg:w-2/6 text-center font-bold'>{t("i_am")}</h2>
 
 					<div className='text-xl my-6 text-principal text-center w-full lg:w-2/6 flex justify-center'>
-						<a className='cursor-pointer flex mx-3 font-bold'>
-							<Image src={RightArrow} width={20} alt='mail' />
+						<a className='cursor-pointer flex mx-3 font-bold' href='#myWork'>
+							<Image src={RightArrow} width={20} alt='arrow' />
 							<span>{t("projects")}</span>
 						</a>
 						<Link href={`${language}/about-me`}>
 							<span className='cursor-pointer flex mx-3 font-bold'>
-								<Image src={RightArrow} width={20} alt='mail' />
+								<Image src={RightArrow} width={20} alt='arrow' />
 								<span>{t("about_me")}</span>
 							</span>
 						</Link>

@@ -6,7 +6,7 @@ import Image, { StaticImageData } from "next/image";
 import Ganalottodo from "../../../public/work/ganalottodo.png";
 import Needed from "../../../public/work/needed.jpeg";
 import TAR from "../../../public/work/TAR.png";
-import Uniken from "../../../public/Uniken.jpg";
+import RightArrowOut from "../../../public/right-arrow-principal-color.svg";
 
 import RightArrow from "../../../public/right-arrow.svg";
 import LeftArrow from "../../../public/left-arrow.svg";
@@ -21,7 +21,6 @@ const ImageSlider = ({ workData }: any) => {
 	const projects: Project[] = [
 		{ id: "tar", name: "TAR", image: TAR },
 		{ id: "needed", name: "Needed", image: Needed },
-		{ id: "uniken", name: "Uniken", image: Uniken },
 		{ id: "ganalottodo", name: "Ganalottodo", image: Ganalottodo },
 	];
 
@@ -70,11 +69,27 @@ const ImageSlider = ({ workData }: any) => {
 								<Image className={`z-0 h-full w-full object-cover object-center opacity-50 rounded-[1rem]`} src={project.image} alt={project.name} />
 							</div>
 						</div>
-						<div className='grid lg:grid-cols-3 gap-x-1 gap-y-6 lg:gap-y-28 p-8 lg:p-16'>
-							<p className='text-2xl lg:text-4xl'>About</p>
-							<p className='col-span-2 text-base lg:text-xl font-light text-secondary'>{workData[project.id].about}</p>
-							<p className='text-2xl lg:text-4xl'>Task</p>
-							<p className='col-span-2 text-base lg:text-xl font-light text-secondary'>{workData[project.id].task}</p>
+						<div className='grid grid-cols-3 md:grid-cols-5 gap-x-1 gap-y-6 lg:gap-y-16 p-8 lg:p-16 items-center'>
+							<p className='col-span-2 md:col-span-1 text-2xl lg:text-4xl'>{workData.year}</p>
+							<p className='text-base lg:text-xl font-light text-secondary_light'>{workData[project.id].year}</p>
+
+							<p className='col-span-2 md:col-span-1 text-2xl lg:text-4xl'>{workData.rol}</p>
+							<p className='text-base lg:text-xl font-light text-secondary_light'>{workData[project.id].rol}</p>
+
+							<a
+								href={workData[project.id].url}
+								target='_blank'
+								className='flex col-span-4 md:col-span-1 text-2xl lg:text-5xl [-webkit-text-stroke-width:2px] [-webkit-text-stroke-color:--principal] font-semibold text-transparent cursor-pointer '
+							>
+								GO
+								<Image src={RightArrowOut} width={40} alt='mail' className='animate-pulse' />
+							</a>
+
+							<p className='text-2xl lg:text-4xl'>{workData.about}</p>
+							<p className='col-span-4 text-base lg:text-xl font-light text-secondary_light'>{workData[project.id].about}</p>
+
+							<p className='text-2xl lg:text-4xl'>{workData.task}</p>
+							<p className='col-span-4 text-base lg:text-xl font-light text-secondary_light'>{workData[project.id].task}</p>
 						</div>
 					</div>
 				))}
