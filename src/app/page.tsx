@@ -9,7 +9,7 @@ const Page = () => {
 		setTimeout(() => {
 			console.log("Redirecting ....");
 			router.push("/es");
-		}, 1000);
+		}, 100);
 	}, []);
 	return (
 		<div className='w-screen h-screen flex justify-center items-center'>
