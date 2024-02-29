@@ -16,7 +16,7 @@ const Header = async (props: Props) => {
 	const { languages } = await useTranslation({ language, ns: "menu" });
 	return (
 		<div className='flex justify-between text-2xl'>
-			<a href={`/${language}`} className={`cursor-pointer ${hostClass}`}>
+			<a href={`/ektl.dev/${language}`} className={`cursor-pointer ${hostClass}`}>
 				ektl.dev
 			</a>
 			<span className={`text-secondary_light ${languagesClass}`}>
