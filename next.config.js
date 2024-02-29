@@ -1,17 +1,4 @@
 /** @type {import('next').NextConfig} */
-const nextConfig = {
-	/*output: "export",
-	images: { unoptimized: true },
-	async redirects() {
-		return [
-			// Basic redirect
-			{
-				source: "/",
-				destination: "/es",
-				permanent: true,
-			},
-		];
-	},*/
-};
+const nextConfig = {};
 
 module.exports = nextConfig;
