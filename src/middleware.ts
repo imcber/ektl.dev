@@ -17,6 +17,8 @@ export function middleware(req: NextRequest) {
 	if (!lng) lng = fallbackLng;
 
 	if (req.nextUrl.pathname.startsWith('/_next')) return;
+	console.log({ path:req.nextUrl.pathname});
+	
 
 	// Redirect if lng in path is not supported
 	if (
