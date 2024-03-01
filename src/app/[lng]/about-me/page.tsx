@@ -3,6 +3,7 @@ import { LanguageProps } from "../page";
 import { LanguageProvider } from "@/context/LanguageContext";
 import { About } from "@/components/About";
 import { Stack } from "@/components/Stack";
+import { Contact } from "@/components/Contact";
 
 const aboutMe = ({ params: { lng } }: LanguageProps) => {
 	return (
@@ -10,6 +11,7 @@ const aboutMe = ({ params: { lng } }: LanguageProps) => {
 			<LanguageProvider initialValue={lng}>
 				<About />
 				<Stack />
+				<Contact />
 			</LanguageProvider>
 		</main>
 	);

@@ -3,12 +3,6 @@ import { useLanguage } from "@/context/LanguageContext";
 import Image from "next/image";
 import React from "react";
 
-import Mail from "../../../public/contact/mail.svg";
-import Location from "../../../public/contact/location.svg";
-import Linkedin from "../../../public/contact/linkedin.svg";
-import Github from "../../../public/contact/github.svg";
-import Instagram from "../../../public/contact/instagram.svg";
-
 import RightArrowOut from "../../../public/right-arrow-principal-color.svg";
 
 export const Contact = async () => {
