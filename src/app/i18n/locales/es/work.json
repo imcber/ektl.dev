@@ -25,6 +25,13 @@
 			"year": "2021 - 2022",
 			"rol": "Backend",
 			"url": "https://www.ganalottodo.com/#/landing/home"
+		},
+		"uniken": {
+			"about": "Uniken es un producto el cual se centra en seguridad. Uniken eleva la identidad de la confianza a la certeza, haciendo que cada interacción con el cliente sea fluida, segura y cierta.",
+			"task": "En Uniken, trabaje desarrollando APIS en python y Java para el consumo de servicios REST, agregando conexiones bases de datos, buckets y conexiones con otras APIS, asi como implementacion de patrones de diseño.",
+			"year": "2023 - Hoy",
+			"rol": "Backend",
+			"url": "https://www.uniken.com/"
 		}
 	}
 }

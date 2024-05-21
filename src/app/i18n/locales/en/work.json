@@ -8,7 +8,7 @@
 		"tar": {
 			"about": "Tar is a flight booking system developed using technologies such as Java and JavaScript. Tar allows flight reservations and offers a variety of payment types such as credit/debit cards, cash, and cryptocurrencies.",
 			"task": "In TAR, backend improvements involve adding functionalities in payments, billing, as well as fixing bugs. Optimizing deployment flows is crucial for a smoother system. In the frontend, refactoring class components to hooks, improving state management, and perfecting client requests.",
-			"year": "2022 - Today",
+			"year": "2022 - Present",
 			"rol": "Fullstack",
 			"url": "https://tarmexico.com/"
 		},
@@ -25,6 +25,13 @@
 			"year": "2021 - 2022",
 			"rol": "Backend",
 			"url": "https://www.ganalottodo.com/#/landing/home"
+		},
+		"uniken": {
+			"about": "Uniken is a product focused on security. Uniken elevates identity from trust to certainty, making every client interaction seamless, secure, and certain.",
+			"task": "At Uniken, I worked on developing private APIs in Python and Java for consuming REST services, adding database connections, buckets, and connections with other APIs, as well as implementing design patterns.",
+			"year": "2023 - Present",
+			"role": "Backend",
+			"url": "https://www.uniken.com/"
 		}
 	}
 }

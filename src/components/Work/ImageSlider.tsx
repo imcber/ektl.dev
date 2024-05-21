@@ -6,6 +6,7 @@ import Image, { StaticImageData } from "next/image";
 import Ganalottodo from "../../../public/work/ganalottodo.png";
 import Needed from "../../../public/work/needed.jpeg";
 import TAR from "../../../public/work/TAR.png";
+import Uniken from "../../../public/work/uniken.png";
 import RightArrowOut from "../../../public/right-arrow-principal-color.svg";
 
 import RightArrow from "../../../public/right-arrow.svg";
@@ -22,6 +23,7 @@ const ImageSlider = ({ workData }: any) => {
 		{ id: "tar", name: "TAR", image: TAR },
 		{ id: "needed", name: "Needed", image: Needed },
 		{ id: "ganalottodo", name: "Ganalottodo", image: Ganalottodo },
+		{ id: "uniken", name: "Uniken", image: Uniken },
 	];
 
 	const [currentIndex, setCurrentIndex] = useState(0);
