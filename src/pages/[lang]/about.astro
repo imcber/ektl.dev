@@ -1,7 +1,21 @@
 ---
-import astroLogo from "../assets/astro.svg";
-import background from "../assets/background.svg";
-import Layout from "../layouts/Layout.astro";
+import Layout from "../../layouts/Layout.astro";
+import astroLogo from "../../assets/astro.svg";
+import background from "../../assets/background.svg";
+import { getCollection } from "astro:content";
+
+export async function getStaticPaths() {
+  const pages = await getCollection("home");
+
+  const paths = pages.map((page) => {
+    const [lang] = page.id.split("/");
+    return { params: { lang }, props: page };
+  });
+
+  return paths;
+}
+
+const page = Astro.props;
 ---
 
 <Layout>
@@ -17,7 +31,7 @@ import Layout from "../layouts/Layout.astro";
             alt="Astro Homepage Enlgish"
           /></a
         >
-        <h1>You are in /about</h1>
+        <h1>You are in /about with {page.data.greetings.hello}</h1>
       </section>
     </main>
 

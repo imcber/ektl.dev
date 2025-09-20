@@ -1,0 +1,25 @@
+---
+import Welcome from "../../components/Welcome.astro";
+import Layout from "../../layouts/Layout.astro";
+import { getCollection } from "astro:content";
+
+export async function getStaticPaths() {
+  const pages = await getCollection("home");
+
+  const paths = pages.map((page) => {
+    const [lang] = page.id.split("/");
+    return { params: { lang }, props: page };
+  });
+
+  return paths;
+}
+
+const { lang } = Astro.params;
+const page = Astro.props;
+
+const getContent = () => ({ page, lang });
+---
+
+<Layout>
+  <Welcome getContent={getContent} />
+</Layout>
