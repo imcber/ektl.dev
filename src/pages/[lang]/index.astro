@@ -1,4 +1,5 @@
 ---
+import Header from "../../components/Header.astro";
 import Welcome from "../../components/Welcome.astro";
 import Layout from "../../layouts/Layout.astro";
 import { getCollection } from "astro:content";
@@ -21,5 +22,6 @@ const getContent = () => ({ page, lang });
 ---
 
 <Layout>
+  <Header getContent={getContent} />
   <Welcome getContent={getContent} />
 </Layout>

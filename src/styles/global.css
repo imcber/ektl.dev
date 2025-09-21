@@ -1,6 +1,24 @@
 @import "tailwindcss";
+@import "@fontsource/inter";
+@import "@fontsource/montserrat";
 
 @theme {
   --font-sans: "Inter", "sans-serif";
-  --font-serif: "Montserrat Variable", "sans-serif";
+  --font-serif: "Montserrat", "sans-serif";
+  --color-foreground: "var(--foreground)";
+  --color-principal: "var(--principal)";
+  --color-secondary: "var(--secondary)";
+  --color-secondary_light: "var(--secondary_light)";
+}
+
+:root {
+  --foreground: #10160a;
+  --principal: #fffdf9;
+  --secondary: #3a5f4a;
+  --secondary_light: #93ad9e;
+}
+
+body {
+  color: var(--principal);
+  background: var(--foreground);
 }
