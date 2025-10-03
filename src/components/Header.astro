@@ -1,27 +1,20 @@
 ---
-import { getCollection } from "astro:content";
+interface Props {
+  currentLang: string;
+  availableLangs: string[];
+}
 
-const { getContent } = Astro.props;
-const { lang } = getContent();
-const languagesCollection = await getCollection("home");
-
-const languages = languagesCollection.map((language) => {
-  const [lang] = language.id.split("/");
-  return lang;
-});
+const { currentLang, availableLangs } = Astro.props;
 ---
 
 <div class="flex justify-between text-2xl font-sans">
-  <a href={`${lang}`} class="cursor-pointer">
-    ektl.dev
-  </a>
+  <a href={`${currentLang}`} class="cursor-pointer"> ektl.dev </a>
   <span class="text-secondary_light">
     {
-      languages.map((language) => (
+      availableLangs.map((language) => (
         <a
-          key={language}
           class="mr-4 cursor-pointer hover:text-principal uppercase"
-          href={`${language}`}
+          href={`/${language}`}
         >
           [ {language} ]
         </a>

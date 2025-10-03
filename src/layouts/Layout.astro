@@ -1,8 +1,8 @@
 ---
 import CommonHead from "../components/CommonHead.astro";
 import { screenTransition } from "../lib/screenTransition.mjs";
-import "../styles/global.css"
-import "../styles/screenAnimation.css"
+import "../styles/global.css";
+import "../styles/screenAnimation.css";
 ---
 
 <!doctype html>
@@ -14,8 +14,10 @@ import "../styles/screenAnimation.css"
     <meta name="generator" content={Astro.generator} />
     <CommonHead />
   </head>
-  <body>
-    <slot />
+  <body class="bg-foreground text-principal contenedor-con-efecto">
+    <main>
+      <slot />
+    </main>
   </body>
 </html>
 

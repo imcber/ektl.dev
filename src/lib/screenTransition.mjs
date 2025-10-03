@@ -1,12 +1,12 @@
-const animaition = {
+const animation = {
   old: {
     name: "none",
-    duration: "1s",
+    duration: "0.7s",
     easing: "ease-in",
   },
   new: {
     name: "slide-left",
-    duration: "1s",
+    duration: "0.7s",
     easing: "ease-in-out",
   },
 };
@@ -14,17 +14,17 @@ const animaition = {
 const backAnimation = {
   old: {
     name: "none",
-    duration: "1s",
+    duration: "0.7s",
     easing: "ease-in",
   },
   new: {
     name: "slide-rigth",
-    duration: "1s",
+    duration: "0.7s",
     easing: "ease-in-out",
   },
 };
 
 export const screenTransition = {
-  forwards: animaition,
+  forwards: animation,
   backwards: backAnimation,
 };

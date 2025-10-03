@@ -1,7 +1,7 @@
 @keyframes slide-left {
   0% {
     transform: translateX(100vw);
-    clip-path: polygon(0% 0%, 100% 0%, 100% 100%, 30% 100%);
+    clip-path: polygon(0% 0%, 100% 0%, 100% 100%, 50% 100%);
   }
   100% {
     transform: translateX(0);
@@ -12,10 +12,53 @@
 @keyframes slide-rigth {
   0% {
     transform: translateX(-100vw);
-    clip-path: polygon(0% 0%, 100% 0%, 70% 100%, 0% 100%);
+    clip-path: polygon(0% 0%, 100% 0%, 50% 100%, 0% 100%);
   }
   100% {
     transform: translateX(0);
     clip-path: polygon(0% 0%, 100% 0%, 100% 100%, 0% 100%);
   }
+}
+
+.contenedor-con-efecto {
+  /* Asegúrate de que el contenedor pueda tener elementos posicionados absolutamente en su interior */
+  position: relative; 
+  overflow: hidden; /* Evita que el seudoelemento se salga */
+  color: white; /* Color de texto de ejemplo */
+  text-align: center;
+}
+
+.contenedor-con-efecto::after {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+
+  /* --- CAMBIO 1: Granos más grandes --- */
+  /* Cambiamos baseFrequency de ".9" a un valor más bajo como ".25" */
+  background-image: url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1000 1000"><filter id="a" x="0" y="0" width="100%" height="100%"><feTurbulence baseFrequency=".1"/></filter><rect width="100%" height="100%" filter="url(%23a)"/></svg>');
+  
+  /* --- CAMBIO 2: Fondo más visible --- */
+  /* Reducimos la opacidad para que el ruido sea más sutil */
+  opacity: 0.06;
+
+  animation: ruidoAnimado .2s infinite linear;
+  pointer-events: none; 
+}
+
+/* Define la animación */
+@keyframes ruidoAnimado {
+  0% { transform: translate(0, 0); }
+  10% { transform: translate(-5%, -5%); }
+  20% { transform: translate(-10%, 5%); }
+  30% { transform: translate(5%, -10%); }
+  40% { transform: translate(-5%, 15%); }
+  50% { transform: translate(-10%, 5%); }
+  60% { transform: translate(15%, 0); }
+  70% { transform: translate(0, 10%); }
+  80% { transform: translate(-15%, 0); }
+  90% { transform: translate(10%, 5%); }
+  100% { transform: translate(5%, 0); }
 }

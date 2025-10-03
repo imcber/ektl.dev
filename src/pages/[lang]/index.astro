@@ -2,26 +2,32 @@
 import Header from "../../components/Header.astro";
 import Welcome from "../../components/Welcome.astro";
 import Layout from "../../layouts/Layout.astro";
-import { getCollection } from "astro:content";
+import { getCollection, type CollectionEntry } from "astro:content";
 
 export async function getStaticPaths() {
   const pages = await getCollection("home");
 
+  const availableLangs = pages.map((page) => page.id.split("/")[0]);
+
   const paths = pages.map((page) => {
     const [lang] = page.id.split("/");
-    return { params: { lang }, props: page };
+    return { params: { lang }, props: { page, availableLangs } };
   });
 
   return paths;
 }
 
-const { lang } = Astro.params;
-const page = Astro.props;
+interface Props {
+  page: CollectionEntry<"home">;
+  availableLangs: string[];
+}
 
-const getContent = () => ({ page, lang });
+const { lang } = Astro.params;
+const { page, availableLangs } = Astro.props;
 ---
 
 <Layout>
-  <Header getContent={getContent} />
-  <Welcome getContent={getContent} />
+  <Welcome greetings={page.data.greetings}>
+    <Header currentLang={lang} availableLangs={availableLangs} slot="header" />
+  </Welcome>
 </Layout>
