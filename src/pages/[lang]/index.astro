@@ -1,6 +1,7 @@
 ---
+import Contact from "../../components/Contact.astro";
 import Header from "../../components/Header.astro";
-import Welcome from "../../components/Welcome.astro";
+import Welcome from "../../components/Home/Welcome.astro";
 import Layout from "../../layouts/Layout.astro";
 import { getCollection, type CollectionEntry } from "astro:content";
 
@@ -30,4 +31,5 @@ const { page, availableLangs } = Astro.props;
   <Welcome greetings={page.data.greetings}>
     <Header currentLang={lang} availableLangs={availableLangs} slot="header" />
   </Welcome>
+  <Contact />
 </Layout>
