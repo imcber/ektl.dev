@@ -7,5 +7,26 @@
     "profile": "Soy un desarrollador Fullstack",
     "projects": "proyectos",
     "about": " mas sobre mi"
+  },
+  "contact": {
+    "touch": "Ponte en contacto",
+    "description": "Tienes alguna consulta o duda? O solo quieres hablar de tecnologia, arquitectura de software buenas practicas, no dudes en contactarme",
+    "social": [
+      {
+        "title": "Github",
+        "url": "https://github.com/imcber",
+        "user": "imcber"
+      },
+      {
+        "title": "Instagram",
+        "url": "https://www.instagram.com/imcber1/",
+        "user": "imcber1"
+      },
+      {
+        "title": "Linkedin",
+        "url": "https://www.linkedin.com/in/imcber/",
+        "user": "imcber"
+      }
+    ]
   }
 }

@@ -1,45 +1,98 @@
 ---
+interface Social {
+  title: string;
+  url: string;
+  user: string;
+}
 
+interface Contact {
+  touch: string;
+  description: string;
+  social: Social[];
+}
+
+interface Props {
+  contact: Contact;
+}
+
+const {
+  contact: { touch, description, social },
+} = Astro.props;
+
+const contactMethods = [
+  {
+    title: "Collaborate",
+    email: "collaborate@example.com",
+    phone: "+1 (555) 905-2345",
+  },
+  {
+    title: "Press",
+    email: "press@example.com",
+    phone: "+1 (555) 905-3456",
+  },
+  {
+    title: "Join our team",
+    email: "careers@example.com",
+    phone: "+1 (555) 905-4567",
+  },
+  {
+    title: "Say hello",
+    email: "hello@example.com",
+    phone: "+1 (555) 905-5678",
+  },
+];
 ---
 
-<section id="contact" class="h-auto text-principal p-7 lg:px-28">
-  <div class="h-full w-full flex items-start justify-start border-b-2 pb-5">
-    <p
-      class="text-6xl [-webkit-text-stroke-width:2px] [-webkit-text-stroke-color:--principal] font-bold text-transparent"
-    >
-      Contacto
-    </p>
-  </div>
-  <div class="flex flex-col lg:flex-row justify-around py-8 lg:p-8 items-start">
-    <div class="flex items-center pb-5 lg:p-0">
-      <p class="font-bold pr-12 text-3xl">Mail</p>
-      <p class="text-xl">ekatl.ramirez@gmail.com</p>
+<section class="text-principal py-16 sm:py-24">
+  <div
+    class="max-w-7xl mx-auto px-6 lg:px-8 grid grid-cols-1 lg:grid-cols-3 gap-12"
+  >
+    <div class="lg:col-span-1">
+      <h2 class="text-3xl sm:text-4xl font-bold tracking-tight font-serif">
+        {touch}
+      </h2>
+      <p class="mt-4 text-lg text-principal text-justify">
+        {description}
+      </p>
     </div>
-    <div class="flex">
-      <p class="font-bold pr-12 text-3xl">Social</p>
-      <div>
-        <a
-          href="https://www.linkedin.com/in/imcber/"
-          target="_blank"
-          class="cursor-pointer flex text-xl py-2"
-        >
-          Linkedin
-        </a>
-        <a
-          href="https://www.instagram.com/imcber1/"
-          target="_blank"
-          class="cursor-pointer flex text-xl py-2"
-        >
-          Instagram
-        </a>
-        <a
-          href="https://github.com/imcber"
-          target="_blank"
-          class="cursor-pointer flex text-xl py-2"
-        >
-          Github
-        </a>
-      </div>
+
+    <div class="lg:col-span-2 grid grid-cols-1 sm:grid-cols-2 gap-6">
+      {
+        social.map((social) => (
+          <div
+            class="relative overflow-hidden rounded-2xl p-6 sm:p-8 
+              border border-white/10 bg-white/5 backdrop-blur-md shadow-lg
+              transition-all duration-300 ease-in-out
+              hover:scale-[1.02] hover:backdrop-blur-lg hover:border-white/20 hover:shadow-principal/10
+              
+              before:content-[''] before:absolute before:inset-0
+              before:bg-[linear-gradient(110deg,transparent_40%,rgba(255,255,255,0.15)_50%,transparent_60%)]
+              before:translate-x-[-100%]
+              before:transition-transform before:duration-700 before:ease-in-out
+              hover:before:translate-x-[100%]
+              before:z-10
+              cursor-pointer"
+          >
+            <h3 class="text-xl font-semibold text-principal font-serif">
+              {social.title}
+            </h3>
+            <dl class="mt-4 text-base text-principal space-y-2">
+              <div>
+                <dt class="sr-only">User</dt>
+                <dd>
+                  <a
+                    class="text-principal transition-colors"
+                    href={social.url}
+                    target="_blank"
+                  >
+                    @{social.user}
+                  </a>
+                </dd>
+              </div>
+            </dl>
+          </div>
+        ))
+      }
     </div>
   </div>
 </section>

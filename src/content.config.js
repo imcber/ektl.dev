@@ -17,6 +17,17 @@ const greetingCollection = defineCollection({
       projects: z.string(),
       about: z.string(),
     }),
+    contact: z.object({
+      touch: z.string(),
+      description: z.string(),
+      social: z.array(
+        z.object({
+          title: z.string(),
+          url: z.string(),
+          user: z.string(),
+        }),
+      ),
+    }),
   }),
 });
 
