@@ -4,28 +4,26 @@
     "name": " Bernardo,",
     "rest": " but call me",
     "alias": " Nauseu'x",
-    "profile": "I'm a Fullstack developer",
+    "profile": "I am a Full-Stack Developer with six years of experience.",
     "projects": "projects",
     "about": " more about me"
   },
   "contact": {
     "touch": "Get in touch",
     "description": "Should you have any questions? Or just want to chat about tech, software architecture, and best practices? Feel free to contact me.",
+    "resume":"Download resume",
     "social": [
       {
-        "title": "Github",
-        "url": "https://github.com/imcber",
-        "user": "imcber"
+        "title": "github",
+        "url": "https://github.com/imcber"
       },
       {
-        "title": "Instagram",
-        "url": "https://www.instagram.com/imcber1/",
-        "user": "imcber1"
+        "title": "instagram",
+        "url": "https://www.instagram.com/imcber1/"
       },
       {
-        "title": "Linkedin",
-        "url": "https://www.linkedin.com/in/imcber/",
-        "user": "imcber"
+        "title": "linkedin",
+        "url": "https://www.linkedin.com/in/imcber/"
       }
     ]
   }

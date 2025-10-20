@@ -31,5 +31,5 @@ const { page, availableLangs } = Astro.props;
   <Welcome greetings={page.data.greetings}>
     <Header currentLang={lang} availableLangs={availableLangs} slot="header" />
   </Welcome>
-  <Contact contact={page.data.contact} />
+  <Contact contact={page.data.contact} resumePath={`/resume/${lang}.pdf`}/>
 </Layout>

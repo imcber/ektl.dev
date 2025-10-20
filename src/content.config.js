@@ -20,11 +20,11 @@ const greetingCollection = defineCollection({
     contact: z.object({
       touch: z.string(),
       description: z.string(),
+      resume: z.string(),
       social: z.array(
         z.object({
           title: z.string(),
           url: z.string(),
-          user: z.string(),
         }),
       ),
     }),
