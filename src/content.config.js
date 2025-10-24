@@ -16,6 +16,8 @@ const greetingCollection = defineCollection({
       profile: z.string(),
       projects: z.string(),
       about: z.string(),
+      tooltip: z.string(),
+      contact: z.string(),
     }),
     contact: z.object({
       touch: z.string(),

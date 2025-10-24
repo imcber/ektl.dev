@@ -6,12 +6,14 @@
     "alias": " Nauseu'x",
     "profile": "Soy un desarrollador Full-Stack con seis años de experiencia.",
     "projects": "proyectos",
-    "about": " mas sobre mi"
+    "about": " mas sobre mi",
+    "tooltip": "Es el nombre que tomo como Dungeon Master",
+    "contact": "contacto"
   },
   "contact": {
     "touch": "Ponte en contacto",
     "description": "Tienes alguna consulta o duda? O solo quieres platicar sobre tecnologia, arquitectura de software  o buenas practicas, no dudes en contactarme",
-    "resume":"Descarga CV",
+    "resume": "Descarga CV",
     "social": [
       {
         "title": "github",

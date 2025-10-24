@@ -1,0 +1,27 @@
+---
+interface Props {
+  text: string;
+  tooltip: string;
+}
+
+const { text, tooltip } = Astro.props;
+---
+
+<span
+  class="relative inline-block group cursor-pointer transition-all duration-300 transform hover:scale-120 hover:translate-x-4"
+>
+  <span class="font-bold cursor-pointer">{text}</span>
+
+  <span
+    class="absolute z-10
+               -top-8 left-1/2 -translate-x-1/2
+               p-2
+               text-sm text-principal bg-foreground
+               rounded-md shadow-lg
+               whitespace-nowrap
+               opacity-0 invisible group-hover:opacity-100 group-hover:visible
+               transition-opacity duration-300"
+  >
+    {tooltip}
+  </span>
+</span>
