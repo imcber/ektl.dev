@@ -1,0 +1,39 @@
+---
+import { Image } from "astro:assets";
+import Photo from '../../assets/PA070155.jpeg'
+---
+
+
+<div class="h-auto block lg:flex bg-principal">
+  <Image
+    class="h-auto w-full lg:w-5/12 object-cover"
+    src={Photo}
+    alt="My photo"
+    priority
+  />
+  <div class="w-full lg:w-7/12 flex flex-col z-10 p-7 lg:p-14">
+    <p class="text-5xl text-secondary">{t("hello")}</p>
+    <p class="text-2xl text-foreground leading-9 font-light mx-0 my-7 lg:m-14">
+      {t("about")}
+    </p>
+    <div class="m-0 lg:m-14">
+      <table
+        class="border-collapse border-spacing-4 w-full text-base font-light"
+      >
+        <tbody>
+          {
+            tableData.map((row: AboutAttributes) => (
+              <tr
+                key={row.description}
+                class="border-b-[1px] border-foreground transition-all duration-200 hover:text-xl "
+              >
+                <td class="text-secondary w-1/2 py-3">{row.description}</td>
+                <td class="text-foreground w-1/2">{row.value}</td>
+              </tr>
+            ))
+          }
+        </tbody>
+      </table>
+    </div>
+  </div>
+</div>

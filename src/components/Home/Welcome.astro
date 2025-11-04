@@ -18,17 +18,28 @@ interface Greetings {
 
 interface Props {
   greetings: Greetings;
+  currentLang: string;
 }
 
 const {
-  greetings: { hello, name, rest, alias, profile, projects, about, tooltip, contact },
+  greetings: {
+    hello,
+    name,
+    rest,
+    alias,
+    profile,
+    projects,
+    about,
+    tooltip,
+    contact,
+  },
+  currentLang
 } = Astro.props;
 ---
 
-<section id="welcome" class="flex min-h-screen relative overflow-hidden">
+<section id="welcome" class="flex min-h-screen relative overflow-hidden z-0">
   <Background3D />
   <div class="w-full flex flex-col z-10 p-7 lg:p-14">
-    <slot name="header" />
     <section id="hero" class="flex flex-col justify-center items-center h-full">
       <h1
         class="text-5xl my-3 text-center text-transparent lg:text-6xl leading-16 lg:leading-normal"
@@ -52,12 +63,12 @@ const {
       >
         <a
           class="cursor-pointer flex mx-3 font-bold md:text-2xl xl:text-3xl"
-          href="#contact"
+          href={`${currentLang}/projects`}
         >
           <Image src={linkArrow} class="md:w-8 xl:w-10" alt="arrow_projects" />
           <span>{projects}</span>
         </a>
-        <a href="about-me">
+        <a href={`${currentLang}/about-me`}>
           <span
             class="cursor-pointer flex mx-3 font-bold md:text-2xl xl:text-3xl"
           >

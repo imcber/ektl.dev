@@ -1,14 +1,18 @@
 ---
 import Background from "../../assets/cloner_tubes.jpg";
 import BackgroundVideo from "../../assets/cloner-tubes.mp4";
+import { Image } from "astro:assets";
 ---
 
 <div class="hidden md:block">
   <video
+  id="background-video"
     autoplay
     loop
     muted
+    playsinline
     poster={Background.src}
+    transition:persist="background-video"
     class="absolute top-1/2 left-1/2 min-w-full min-h-full w-auto h-auto -z-10 max-w-none -translate-x-1/2 -translate-y-1/2"
   >
     <source src={BackgroundVideo} type="video/mp4" />
@@ -16,5 +20,5 @@ import BackgroundVideo from "../../assets/cloner-tubes.mp4";
 </div>
 
 <div class="absolute h-full w-full block md:hidden">
-  <img alt="background" src={Background.src} class="h-full object-cover" />
+  <Image src={Background} class="h-full object-cover" alt="background" />
 </div>

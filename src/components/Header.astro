@@ -5,20 +5,26 @@ interface Props {
 }
 
 const { currentLang, availableLangs } = Astro.props;
+
+const currentPath = Astro.url.pathname;
+const baseSlug = currentPath.replace(new RegExp(`^/${currentLang}`), '');
+const homeHref = `/${currentLang}`;
 ---
 
-<div class="flex justify-between text-2xl font-sans">
-  <a href={`${currentLang}`} class="cursor-pointer"> ektl.dev </a>
-  <span class="text-secondary_light">
-    {
-      availableLangs.map((language) => (
-        <a
-          class="mr-4 cursor-pointer hover:text-principal uppercase"
-          href={`/${language}`}
-        >
-          [ {language} ]
-        </a>
-      ))
-    }
-  </span>
+<div class="w-full flex flex-col z-10 p-7 lg:p-14 absolute">
+  <div class="flex justify-between text-2xl font-sans">
+    <a href={homeHref} class="cursor-pointer"> ektl.dev </a>
+    <span class="text-secondary_light">
+      {
+        availableLangs.map((language) => (
+          <a
+            class="mr-4 cursor-pointer hover:text-principal uppercase"
+            href={`/${language}${baseSlug}`}
+          >
+            [ {language} ]
+          </a>
+        ))
+      }
+    </span>
+  </div>
 </div>

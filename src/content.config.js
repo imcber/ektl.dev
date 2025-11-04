@@ -33,6 +33,25 @@ const greetingCollection = defineCollection({
   }),
 });
 
+const aboutMeCollection = defineCollection({
+  loader: glob({
+    pattern: "**/*.json",
+    base: "./src/content/about-me",
+    generateId: ({ entry }) => entry.replace(/\.json$/, ""),
+  }),
+  schema: z.object({
+    hello: z.string(),
+    about: z.string(),
+    table: z.array(
+      z.object({
+        description: z.string(),
+        value: z.string(),
+      }),
+    ),
+  }),
+});
+
 export const collections = {
   home: greetingCollection,
+  aboutMe: aboutMeCollection
 };

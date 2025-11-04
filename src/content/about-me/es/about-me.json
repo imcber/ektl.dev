@@ -1,0 +1,38 @@
+{
+	"hello": "Hola! Soy Bernardo",
+	"about": "Soy un apasionado desarrollador Full-Stack mexicano con un profundo interés en la tecnología. Durante el último año, me he enfocado en mejorar mis habilidades en desarrollo web, incluyendo el uso de lenguajes como JavaScript, TypeScript y Java, así como frameworks y bibliotecas populares. Como autodidacta, disfruto explorar nuevas tecnologías y leer regularmente para mantenerme al día con las tendencias de la industria. Ahora, estoy buscando nuevas oportunidades que me permitan seguir perfeccionando mis habilidades y contribuir a significativos proyectos.",
+	"table": [
+		{
+			"description": "Edad",
+			"value": "27"
+		},
+		{
+			"description": "Nombre",
+			"value": "Ekatl Bernardo Ramirez Zavala"
+		},
+		{
+			"description": "Ubicación",
+			"value": "Pachuca, Hidalgo, Mexico"
+		},
+		{
+			"description": "Tecnologías",
+			"value": "Java, JavaScript, SQL and Mongo"
+		},
+		{
+			"description": "Frameworks y Librerías",
+			"value": "React, Next, Node and Spring"
+		},
+		{
+			"description": "Idioma",
+			"value": "Español: nativo, Inglés: B1"
+		},
+		{
+			"description": "Hobbies",
+			"value": "Fotografia"
+		},
+		{
+			"description": "Libro favorito",
+			"value": "El extrangero de Albert Camus"
+		}
+	]
+}

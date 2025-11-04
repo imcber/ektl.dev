@@ -28,8 +28,7 @@ const { page, availableLangs } = Astro.props;
 ---
 
 <Layout>
-  <Welcome greetings={page.data.greetings}>
-    <Header currentLang={lang} availableLangs={availableLangs} slot="header" />
-  </Welcome>
+  <Header currentLang={lang} availableLangs={availableLangs} />
+  <Welcome greetings={page.data.greetings} currentLang={lang}/>
   <Contact contact={page.data.contact} resumePath={`/resume/${lang}.pdf`} />
 </Layout>
