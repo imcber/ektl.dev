@@ -2,11 +2,11 @@
   "greetings": {
     "hello": "Hola! Soy",
     "name": " Bernardo,",
-    "rest": " pero dime",
+    "rest": " pero diganme",
     "alias": " Nauseu'x",
     "profile": "Soy un desarrollador Full-Stack con seis años de experiencia.",
     "projects": "proyectos",
-    "about": " mas sobre mi",
+    "about": " quien soy",
     "tooltip": "Es el nombre que tomo como Dungeon Master",
     "contact": "contacto"
   },

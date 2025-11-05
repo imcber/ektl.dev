@@ -1,14 +1,14 @@
 {
 	"hello": "Hola! Soy Bernardo",
-	"about": "Soy un apasionado desarrollador Full-Stack mexicano con un profundo interés en la tecnología. Durante el último año, me he enfocado en mejorar mis habilidades en desarrollo web, incluyendo el uso de lenguajes como JavaScript, TypeScript y Java, así como frameworks y bibliotecas populares. Como autodidacta, disfruto explorar nuevas tecnologías y leer regularmente para mantenerme al día con las tendencias de la industria. Ahora, estoy buscando nuevas oportunidades que me permitan seguir perfeccionando mis habilidades y contribuir a significativos proyectos.",
+	"about": "Soy un desarrollador full-stack con mucho interés en la tecnología. Durante los ultimos años, me he enfocado en mejorar mis habilidades en desarrollo web, incluyendo el uso de lenguajes como JavaScript, Kotlin, Python y Java, así como frameworks y bibliotecas populares. Soy un autodidacta, disfruto leer y eso me permite explorar tecnologías y adaptarme al cualquier desafio. En este momento, busco nuevas oportunidades laborales que me permitan seguir perfeccionando mis habilidades y contribuir a proyectos.",
 	"table": [
 		{
 			"description": "Edad",
-			"value": "27"
+			"value": "29 años"
 		},
 		{
 			"description": "Nombre",
-			"value": "Ekatl Bernardo Ramirez Zavala"
+			"value": "Bernardo Ramirez"
 		},
 		{
 			"description": "Ubicación",
@@ -16,11 +16,11 @@
 		},
 		{
 			"description": "Tecnologías",
-			"value": "Java, JavaScript, SQL and Mongo"
+			"value": "Java, JavaScript, Kotlin, Python, SQL, AWS"
 		},
 		{
 			"description": "Frameworks y Librerías",
-			"value": "React, Next, Node and Spring"
+			"value": "React, Node, Spring, Astro"
 		},
 		{
 			"description": "Idioma",
@@ -32,7 +32,7 @@
 		},
 		{
 			"description": "Libro favorito",
-			"value": "El extrangero de Albert Camus"
+			"value": "El existencialismo es un humanismo de Jean Paul Sartre"
 		}
 	]
 }

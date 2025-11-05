@@ -1,32 +1,47 @@
 ---
 import { Image } from "astro:assets";
-import Photo from '../../assets/PA070155.jpeg'
+import Photo from "../../assets/about-me/me.jpeg";
+
+interface TableAbout {
+  description: string;
+  value: string;
+}
+
+interface AboutMe {
+  hello: string;
+  about: string;
+  table: TableAbout[];
+}
+
+interface Props {
+  aboutMe: AboutMe;
+}
+
+const {
+  aboutMe: { hello, about, table },
+} = Astro.props;
 ---
 
-
-<div class="h-auto block lg:flex bg-principal">
+<div class="h-auto block lg:flex bg-principal z-0 relative">
   <Image
     class="h-auto w-full lg:w-5/12 object-cover"
     src={Photo}
     alt="My photo"
     priority
   />
-  <div class="w-full lg:w-7/12 flex flex-col z-10 p-7 lg:p-14">
-    <p class="text-5xl text-secondary">{t("hello")}</p>
-    <p class="text-2xl text-foreground leading-9 font-light mx-0 my-7 lg:m-14">
-      {t("about")}
+  <div class="w-full lg:w-7/12 flex flex-col z-10 p-7 lg:p-14 lg:pt-32">
+    <p class="text-5xl text-secondary text-left">{hello}</p>
+    <p class="text-xl lg:text-2xl text-foreground leading-9 font-light mx-0 my-7 lg:m-14 text-justify">
+      {about}
     </p>
-    <div class="m-0 lg:m-14">
+    <div class="m-0 lg:m-14 lg:mt-0">
       <table
         class="border-collapse border-spacing-4 w-full text-base font-light"
       >
         <tbody>
           {
-            tableData.map((row: AboutAttributes) => (
-              <tr
-                key={row.description}
-                class="border-b-[1px] border-foreground transition-all duration-200 hover:text-xl "
-              >
+            table.map((row) => (
+              <tr class="border-b-[1px] border-foreground transition-all duration-200 hover:text-xl ">
                 <td class="text-secondary w-1/2 py-3">{row.description}</td>
                 <td class="text-foreground w-1/2">{row.value}</td>
               </tr>

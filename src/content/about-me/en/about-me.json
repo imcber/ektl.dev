@@ -4,11 +4,11 @@
 	"table": [
 		{
 			"description": "Age",
-			"value": "27"
+			"value": "29"
 		},
 		{
-			"description": "Full name",
-			"value": "Ekatl Bernardo Ramirez Zavala"
+			"description": "Name",
+			"value": "Bernardo Ramirez"
 		},
 		{
 			"description": "Location",
@@ -16,11 +16,11 @@
 		},
 		{
 			"description": "Main Technologies",
-			"value": "Java, JavaScript, SQL and Mongo"
+			"value": "Java, JavaScript, Kotlin, Python, SQL, AWS"
 		},
 		{
 			"description": "Main Frameworks and Libraries",
-			"value": "React, Next, Node and Spring"
+			"value": "React, Node, Spring, Astro"
 		},
 		{
 			"description": "Languages",
@@ -32,7 +32,7 @@
 		},
 		{
 			"description": "Favorite book",
-			"value": "The stranger by Albert Camus"
+			"value": "Existentialism & Humanism by Albert Camus"
 		}
 	]
 }

@@ -33,16 +33,16 @@ const {
     tooltip,
     contact,
   },
-  currentLang
+  currentLang,
 } = Astro.props;
 ---
 
 <section id="welcome" class="flex min-h-screen relative overflow-hidden z-0">
   <Background3D />
-  <div class="w-full flex flex-col z-10 p-7 lg:p-14">
+  <div class="w-full flex flex-col z-10">
     <section id="hero" class="flex flex-col justify-center items-center h-full">
       <h1
-        class="text-5xl my-3 text-center text-transparent lg:text-6xl leading-16 lg:leading-normal"
+        class="text-5xl my-4 text-center text-transparent lg:text-6xl leading-16 lg:leading-normal"
       >
         <span class="stroke">{hello}</span>
         <span class="text-principal font-bold">{name}</span>
@@ -59,38 +59,15 @@ const {
       </h2>
 
       <div
-        class="text-xl my-16 text-principal text-center w-full lg:w-2/6 flex justify-center"
+        class="text-xl text-principal text-center w-full lg:w-2/6 flex justify-center my-4"
       >
         <a
-          class="cursor-pointer flex mx-3 font-bold md:text-2xl xl:text-3xl"
-          href={`${currentLang}/projects`}
-        >
-          <Image src={linkArrow} class="md:w-8 xl:w-10" alt="arrow_projects" />
-          <span>{projects}</span>
-        </a>
-        <a href={`${currentLang}/about-me`}>
-          <span
-            class="cursor-pointer flex mx-3 font-bold md:text-2xl xl:text-3xl"
-          >
-            <Image
-              src={linkArrow}
-              class="md:w-8 xl:w-10"
-              alt="arrow_about_me"
-            />
-            <span>{about}</span>
-          </span>
-        </a>
-      </div>
-      <div
-        class="text-xl text-principal text-center w-full lg:w-2/6 flex justify-center"
-      >
-        <a
-          class="cursor-pointer flex mx-3 font-bold md:text-2xl xl:text-3xl"
+          class="border border-current text-principal_light hover:bg-principal hover:text-foreground px-4 py-2 rounded-md transition-colors duration-300 md:text-2xl"
           href="#contact"
         >
-          <Image src={linkArrow} class="md:w-8 xl:w-10" alt="arrow_contact" />
           <span>{contact}</span>
         </a>
+        
       </div>
     </section>
   </div>

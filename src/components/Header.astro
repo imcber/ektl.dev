@@ -2,29 +2,75 @@
 interface Props {
   currentLang: string;
   availableLangs: string[];
+  showBackButton?: boolean;
+  isDarkmode?: boolean;
 }
 
-const { currentLang, availableLangs } = Astro.props;
+const {
+  currentLang,
+  availableLangs,
+  showBackButton = false,
+  isDarkmode = false,
+} = Astro.props;
 
 const currentPath = Astro.url.pathname;
-const baseSlug = currentPath.replace(new RegExp(`^/${currentLang}`), '');
+const baseSlug = currentPath.replace(new RegExp(`^/${currentLang}`), "");
 const homeHref = `/${currentLang}`;
+
+const classMode = {
+  principal: isDarkmode ? "foreground" : "principal",
+};
 ---
 
-<div class="w-full flex flex-col z-10 p-7 lg:p-14 absolute">
-  <div class="flex justify-between text-2xl font-sans">
-    <a href={homeHref} class="cursor-pointer"> ektl.dev </a>
-    <span class="text-secondary_light">
+<div
+  class={`w-full flex flex-col z-10 p-7 lg:p-14 absolute text-${classMode.principal}`}
+>
+  <div
+    class="flex justify-between md:justify-end items-center text-xl md:text-2xl font-sans flex-wrap"
+  >
+    <div class="mx-2 md:mx-4 md:mr-auto">
+      {
+        showBackButton ? (
+          <a
+            href={homeHref}
+            class="cursor-pointer hover:text-principal text-4xl font-extrabold transition-all duration-300"
+            aria-label="Back"
+          >
+            &larr;
+          </a>
+        ) : (
+          <a href={homeHref} class="cursor-pointer ">
+            ektl.dev
+          </a>
+        )
+      }
+    </div>
+
+    <a
+      class="cursor-pointer mx-2 sm:mx-4 font-bold hover:text-secondary_light duration-300"
+      href={`/${currentLang}/about-me`}
+    >
+      about-me
+    </a>
+
+    <a
+      class="cursor-pointer mx-2 sm:mx-4 font-bold hover:text-secondary_light duration-300"
+      href={`/${currentLang}/projects`}
+    >
+      projects
+    </a>
+
+    <div class="mt-6 ml-auto sm:m-0 sm:mx-4 mr-auto">
       {
         availableLangs.map((language) => (
           <a
-            class="mr-4 cursor-pointer hover:text-principal uppercase"
+            class="mr-1 cursor-pointer hover:text-secondary_light uppercase transition-all duration-300"
             href={`/${language}${baseSlug}`}
           >
             [ {language} ]
           </a>
         ))
       }
-    </span>
+    </div>
   </div>
 </div>

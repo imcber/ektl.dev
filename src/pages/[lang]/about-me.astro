@@ -1,6 +1,7 @@
 ---
 import Header from "../../components/Header.astro";
 import Layout from "../../layouts/Layout.astro";
+import AboutMeComponent from '../../components/About/AboutMe.astro'
 import { getCollection, type CollectionEntry } from "astro:content";
 
 export async function getStaticPaths() {
@@ -26,6 +27,7 @@ const { page, availableLangs } = Astro.props;
 ---
 
 <Layout>
-  <Header currentLang={lang} availableLangs={availableLangs} />
-  <p>{page.data.hello}</p>
+  <Header currentLang={lang} availableLangs={availableLangs} showBackButton isDarkmode/>
+  <AboutMeComponent aboutMe={page.data}/>
 </Layout>
+ 

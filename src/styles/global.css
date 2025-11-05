@@ -4,7 +4,8 @@
 
 :root {
   --foreground: #10160a;
-  --principal: #fffdf9;
+  --principal: #f2f5f3;
+  --principal_light: #fffdf9;
   --secondary: #3a5f4a;
   --secondary_light: #93ad9e;
 }
