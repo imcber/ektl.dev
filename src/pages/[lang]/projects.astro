@@ -1,4 +1,6 @@
 ---
+import Header from "../../components/Header.astro";
+import ProjectContainer from "../../components/Projects/ProjectContainer.astro";
 import Layout from "../../layouts/Layout.astro";
 import { getCollection, type CollectionEntry } from "astro:content";
 
@@ -22,8 +24,14 @@ interface Props {
 
 const { lang } = Astro.params;
 const { page, availableLangs } = Astro.props;
-
 ---
 
 <Layout>
+  <Header
+    currentLang={lang}
+    availableLangs={availableLangs}
+    showBackButton
+    isAbsolute={false}
+  />
+  <ProjectContainer />
 </Layout>

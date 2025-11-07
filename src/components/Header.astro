@@ -4,6 +4,7 @@ interface Props {
   availableLangs: string[];
   showBackButton?: boolean;
   isDarkmode?: boolean;
+  isAbsolute?: boolean;
 }
 
 const {
@@ -11,6 +12,7 @@ const {
   availableLangs,
   showBackButton = false,
   isDarkmode = false,
+  isAbsolute = true,
 } = Astro.props;
 
 const currentPath = Astro.url.pathname;
@@ -19,58 +21,89 @@ const homeHref = `/${currentLang}`;
 
 const classMode = {
   principal: isDarkmode ? "foreground" : "principal",
+  principalHex: isDarkmode ? "#10160a" : "#f2f5f3",
 };
 ---
 
 <div
-  class={`w-full flex flex-col z-10 p-7 lg:p-14 absolute text-${classMode.principal}`}
+  class={`w-full flex flex-col z-10 p-7 lg:p-14 ${isAbsolute && "absolute"} text-${classMode.principal}`}
 >
   <div
-    class="flex justify-between md:justify-end items-center text-xl md:text-2xl font-sans flex-wrap"
+    class="flex md:justify-end items-center text-xl md:text-2xl font-sans flex-wrap"
   >
-    <div class="mx-2 md:mx-4 md:mr-auto">
-      {
-        showBackButton ? (
-          <a
-            href={homeHref}
-            class="cursor-pointer hover:text-principal text-4xl font-extrabold transition-all duration-300"
-            aria-label="Back"
-          >
-            &larr;
-          </a>
-        ) : (
-          <a href={homeHref} class="cursor-pointer ">
-            ektl.dev
-          </a>
-        )
-      }
+    <div class="w-full md:w-5/6 flex justify-between items-center">
+      <div class="mx-2 md:mx-4 md:mr-auto">
+        {
+          showBackButton ? (
+            <a
+              href={homeHref}
+              class="cursor-pointer hover:text-principal text-4xl font-extrabold transition-all duration-300"
+              aria-label="Back"
+            >
+              <svg
+                width="1em"
+                viewBox="0 0 24 24"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <>
+                  <g id="SVGRepo_bgCarrier" stroke-width="0" />
+                  <g
+                    id="SVGRepo_tracerCarrier"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                  />
+                  <g id="SVGRepo_iconCarrier">
+                    <g id="Back">
+                      <path
+                        id="Vector"
+                        d="M7 13L3 9M3 9L7 5M3 9H16C18.7614 9 21 11.2386 21 14C21 16.7614 18.7614 19 16 19H11"
+                        stroke={classMode.principalHex}
+                        stroke-width="2"
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                      />
+                    </g>
+                  </g>
+                </>
+              </svg>
+            </a>
+          ) : (
+            <a href={homeHref} class="cursor-pointer ">
+              ektl.dev
+            </a>
+          )
+        }
+      </div>
+
+      <a
+        class="cursor-pointer mx-2 sm:mx-4 font-bold hover:text-secondary_light duration-300"
+        href={`/${currentLang}/about-me`}
+      >
+        about-me
+      </a>
+
+      <a
+        class="cursor-pointer mx-2 sm:mx-4 font-bold hover:text-secondary_light duration-300"
+        href={`/${currentLang}/projects`}
+      >
+        projects
+      </a>
     </div>
 
-    <a
-      class="cursor-pointer mx-2 sm:mx-4 font-bold hover:text-secondary_light duration-300"
-      href={`/${currentLang}/about-me`}
-    >
-      about-me
-    </a>
-
-    <a
-      class="cursor-pointer mx-2 sm:mx-4 font-bold hover:text-secondary_light duration-300"
-      href={`/${currentLang}/projects`}
-    >
-      projects
-    </a>
-
-    <div class="mt-6 ml-auto sm:m-0 sm:mx-4 mr-auto">
-      {
-        availableLangs.map((language) => (
-          <a
-            class="mr-1 cursor-pointer hover:text-secondary_light uppercase transition-all duration-300"
-            href={`/${language}${baseSlug}`}
-          >
-            [ {language} ]
-          </a>
-        ))
-      }
+    <div class="w-full md:w-1/6">
+      <div class="mt-4 ml-auto sm:m-0 sm:mx-4 mr-auto">
+        {
+          availableLangs.map((language) => (
+            <a
+              class="mr-1 cursor-pointer hover:text-secondary_light uppercase transition-all duration-300"
+              href={`/${language}${baseSlug}`}
+            >
+              [ {language} ]
+            </a>
+          ))
+        }
+      </div>
     </div>
   </div>
 </div>
