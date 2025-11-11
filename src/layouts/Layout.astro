@@ -1,15 +1,26 @@
 ---
 import CommonHead from "../components/commons/CommonHead.astro";
-import { screenTransition } from "../lib/screenTransition.mjs";
+import {
+  screenTransition,
+  screenTransitionBack,
+} from "../lib/screenTransition.mjs";
 import "../styles/global.css";
 import "../styles/screenAnimation.css";
+
+interface Props {
+  currentLang: string;
+}
+const { currentLang } = Astro.props;
+
+const isHome = Astro.url.pathname === `/${currentLang}`;
+const activeTransition = isHome ? screenTransitionBack:screenTransition;
 ---
 
 <!doctype html>
 <html
-  lang="en"
+  lang={currentLang}
   transition:name="root"
-  transition:animate={screenTransition}
+  transition:animate={activeTransition}
   class="scroll-smooth"
 >
   <head>

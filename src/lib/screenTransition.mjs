@@ -28,3 +28,8 @@ export const screenTransition = {
   forwards: animation,
   backwards: backAnimation,
 };
+
+export const screenTransitionBack = {
+  forwards: backAnimation,
+  backwards: animation,
+};

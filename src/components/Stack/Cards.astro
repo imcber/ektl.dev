@@ -1,0 +1,42 @@
+---
+//import RightArrow from "../assets/right-arrow-secondary-color.svg";
+//import LeftArrow from "../assets/left-arrow-secondary-color.svg";
+
+export interface Tech {
+  id: string;
+  name: string;
+  experience: number;
+  skill: string;
+}
+
+interface Props {
+  techs: Tech[];
+}
+
+const { techs } = Astro.props;
+---
+
+<div class="block md:flex flex-wrap justify-center transition-all duration-200">
+  {
+    techs.map(({ name, experience, skill }) => (
+      <div
+        class={`w-96 h-96 border-2 border-secondary rounded-2xl p-7 my-3 md:m-3 text-secondary flex flex-col justify-between relative`}
+      >
+        <h1 class="text-5xl">{name}</h1>
+        <>
+          <div class="lg:flex flex-col lgtext-2xl ">
+            <div class="flex">
+              <p class="mr-3">Experience:</p>
+              <p class="col-span-2 font-semibold">{`${experience} y`}</p>
+            </div>
+            <div class="flex">
+              <p class="mr-3">Skill:</p>
+              <p class="col-span-2 font-semibold">{skill}</p>
+            </div>
+          </div>
+          <div class="absolute top-0 left-0 w-96 h-96 flex items-center justify-between"></div>
+        </>
+      </div>
+    ))
+  }
+</div>

@@ -1,15 +1,17 @@
 ---
 import Header from "../../components/Header.astro";
-import ProjectContainer from "../../components/Projects/ProjectContainer.astro";
+import StackContainer from "../../components/Stack/StackContainer.astro";
 import Layout from "../../layouts/Layout.astro";
 import { getCollection, type CollectionEntry } from "astro:content";
 
 export async function getStaticPaths() {
   const pages = await getCollection("home");
 
+  const availableLangs = pages.map((page) => page.id.split("/")[0]);
+
   const paths = pages.map((page) => {
     const [lang] = page.id.split("/");
-    return { params: { lang }, props: { page } };
+    return { params: { lang }, props: { page, availableLangs } };
   });
 
   return paths;
@@ -17,10 +19,11 @@ export async function getStaticPaths() {
 
 interface Props {
   page: CollectionEntry<"home">;
+  availableLangs: string[];
 }
 
 const { lang } = Astro.params;
-const { page } = Astro.props;
+const { page, availableLangs } = Astro.props;
 ---
 
 <Layout currentLang={lang}>
@@ -29,5 +32,5 @@ const { page } = Astro.props;
     showBackButton
     isAbsolute={false}
   />
-  <ProjectContainer />
+  <StackContainer />
 </Layout>

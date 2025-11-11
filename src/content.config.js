@@ -51,7 +51,21 @@ const aboutMeCollection = defineCollection({
   }),
 });
 
+const headerCollection = defineCollection({
+  loader: glob({
+    pattern: "**/*.json",
+    base: "./src/content/header",
+    generateId: ({ entry }) => entry.replace(/\.json$/, ""),
+  }),
+  schema: z.object({
+    "about-me": z.string(),
+    "projects": z.string(),
+    "stack": z.string()
+  }),
+});
+
 export const collections = {
   home: greetingCollection,
-  aboutMe: aboutMeCollection
+  aboutMe: aboutMeCollection,
+  header: headerCollection
 };

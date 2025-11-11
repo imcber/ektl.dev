@@ -7,11 +7,9 @@ import { getCollection, type CollectionEntry } from "astro:content";
 export async function getStaticPaths() {
   const pages = await getCollection("aboutMe");
 
-  const availableLangs = pages.map((page) => page.id.split("/")[0]);
-
   const paths = pages.map((page) => {
     const [lang] = page.id.split("/");
-    return { params: { lang }, props: { page, availableLangs } };
+    return { params: { lang }, props: { page } };
   });
 
   return paths;
@@ -19,15 +17,14 @@ export async function getStaticPaths() {
 
 interface Props {
   page: CollectionEntry<"aboutMe">;
-  availableLangs: string[];
 }
 
 const { lang } = Astro.params;
-const { page, availableLangs } = Astro.props;
+const { page } = Astro.props;
 ---
 
 <Layout>
-  <Header currentLang={lang} availableLangs={availableLangs} showBackButton isDarkmode/>
+  <Header currentLang={lang} showBackButton isDarkmode/>
   <AboutMeComponent aboutMe={page.data}/>
 </Layout>
  
