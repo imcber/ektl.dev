@@ -27,10 +27,6 @@ const { page, availableLangs } = Astro.props;
 ---
 
 <Layout currentLang={lang}>
-  <Header
-    currentLang={lang}
-    showBackButton
-    isAbsolute={false}
-  />
+  <Header currentLang={lang} showBackButton isAbsolute={false} />
   <StackContainer />
 </Layout>

@@ -1,7 +1,7 @@
 ---
 import Header from "../../components/Header.astro";
 import Layout from "../../layouts/Layout.astro";
-import AboutMeComponent from '../../components/About/AboutMe.astro'
+import AboutMeComponent from "../../components/About/AboutMe.astro";
 import { getCollection, type CollectionEntry } from "astro:content";
 
 export async function getStaticPaths() {
@@ -23,8 +23,7 @@ const { lang } = Astro.params;
 const { page } = Astro.props;
 ---
 
-<Layout>
-  <Header currentLang={lang} showBackButton isDarkmode/>
-  <AboutMeComponent aboutMe={page.data}/>
+<Layout currentLang={lang}>
+  <Header currentLang={lang} showBackButton isDarkmode />
+  <AboutMeComponent aboutMe={page.data} />
 </Layout>
- 

@@ -1,38 +1,38 @@
 {
-	"hello": "Hi! I'm Bernardo",
-	"about": "I am a passionate Mexican Full-Stack developer with a deep interest in technology. Over the past year, I have focused on improving my skills in web development, including using languages like JavaScript, TypeScript, and Java, as well as popular frameworks and libraries. As a self-taught learner, I find great enjoyment in exploring new technologies and reading extensively to stay up-to-date with industry trends. Now, I am seeking new opportunities that allow me to continue honing my skills and contribute to exciting projects.",
-	"table": [
-		{
-			"description": "Age",
-			"value": "29"
-		},
-		{
-			"description": "Name",
-			"value": "Bernardo Ramirez"
-		},
-		{
-			"description": "Location",
-			"value": "Pachuca, Hidalgo, Mexico"
-		},
-		{
-			"description": "Main Technologies",
-			"value": "Java, JavaScript, Kotlin, Python, SQL, AWS"
-		},
-		{
-			"description": "Main Frameworks and Libraries",
-			"value": "React, Node, Spring, Astro"
-		},
-		{
-			"description": "Languages",
-			"value": "Spanish: native, English: B1"
-		},
-		{
-			"description": "Hobbies",
-			"value": "Photography"
-		},
-		{
-			"description": "Favorite book",
-			"value": "Existentialism & Humanism by Albert Camus"
-		}
-	]
+  "hello": "Hi! I'm Bernardo",
+  "about": "I am a passionate Mexican Full-Stack developer with a deep interest in technology. Over the past year, I have focused on improving my skills in web development, including using languages like JavaScript, TypeScript, and Java, as well as popular frameworks and libraries. As a self-taught learner, I find great enjoyment in exploring new technologies and reading extensively to stay up-to-date with industry trends. Now, I am seeking new opportunities that allow me to continue honing my skills and contribute to exciting projects.",
+  "table": [
+    {
+      "description": "Age",
+      "value": "29"
+    },
+    {
+      "description": "Name",
+      "value": "Bernardo Ramirez"
+    },
+    {
+      "description": "Location",
+      "value": "Pachuca, Hidalgo, Mexico"
+    },
+    {
+      "description": "Main Technologies",
+      "value": "Java, JavaScript, Kotlin, Python, SQL, AWS"
+    },
+    {
+      "description": "Main Frameworks and Libraries",
+      "value": "React, Node, Spring, Astro"
+    },
+    {
+      "description": "Languages",
+      "value": "Spanish: native, English: B1"
+    },
+    {
+      "description": "Hobbies",
+      "value": "Photography"
+    },
+    {
+      "description": "Favorite book",
+      "value": "Existentialism & Humanism by Albert Camus"
+    }
+  ]
 }

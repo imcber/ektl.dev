@@ -59,13 +59,40 @@ const headerCollection = defineCollection({
   }),
   schema: z.object({
     "about-me": z.string(),
-    "projects": z.string(),
-    "stack": z.string()
+    projects: z.string(),
+    stack: z.string(),
+  }),
+});
+
+const projectsCollection = defineCollection({
+  loader: glob({
+    pattern: "**/*.json",
+    base: "./src/content/projects",
+    generateId: ({ entry }) => entry.replace(/\.json$/, ""),
+  }),
+  schema: z.object({
+    title_page: z.string(),
+    title_year: z.string(),
+    title_rol: z.string(),
+    title_about: z.string(),
+    title_task: z.string(),
+    work: z.array(
+      z.object({
+        id: z.string(),
+        name: z.string(),
+        about: z.string(),
+        task: z.string(),
+        year: z.string(),
+        rol: z.string(),
+        url: z.string(),
+      }),
+    ),
   }),
 });
 
 export const collections = {
   home: greetingCollection,
   aboutMe: aboutMeCollection,
-  header: headerCollection
+  header: headerCollection,
+  projects: projectsCollection,
 };

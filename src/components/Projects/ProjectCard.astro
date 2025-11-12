@@ -1,20 +1,41 @@
 ---
 import { Image } from "astro:assets";
+import type { Project } from "./ProjectContainer.astro";
 
-export interface Props {
-  projectId: string;
-  title: string;
-  description: string;
-  imageUrl: string;
-  imageAlt: string;
-  tags: string[];
+import Coppel from "../../assets/projects/coppel.jpg";
+import Ganalottodo from "../../assets/projects/ganalottodo.jpg";
+import Needed from "../../assets/projects/needed.jpg";
+import Tar from "../../assets/projects/tar.jpg";
+import Uniken from "../../assets/projects/uniken.jpg";
+import Worqout from "../../assets/projects/worqout.jpg";
+
+interface Props {
+  project: Project;
 }
+const {
+  project: { id, name },
+} = Astro.props;
 
-const { projectId, title, description, imageUrl, imageAlt, tags } = Astro.props;
+const projectImage = {
+  tar: Tar,
+  coppel: Coppel,
+  needed: Needed,
+  ganalottodo: Ganalottodo,
+  uniken: Uniken,
+  worqout: Worqout,
+};
 ---
 
-<article
-  class="relative flex flex-col overflow-hidden rounded-2xl shadow-lg group"
+<div
+  class={`w-full md:w-2/7 min-h-96 border-2 border-principal_light rounded-2xl p-2 my-3 md:m-3 flex-col overflow-hidden relative`}
 >
-  
-</article>
+  <Image
+    class="h-56 w-full object-cover rounded-2xl"
+    src={projectImage[id] || Tar}
+    alt={name}
+    priority
+  />
+  <div class="px-6 py-4">
+    <h2 class="text-2xl text-start font-bold">{name}</h2>
+  </div>
+</div>

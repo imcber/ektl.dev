@@ -1,38 +1,38 @@
 {
-	"hello": "Hola! Soy Bernardo",
-	"about": "Soy un desarrollador full-stack con mucho interés en la tecnología. Durante los ultimos años, me he enfocado en mejorar mis habilidades en desarrollo web, incluyendo el uso de lenguajes como JavaScript, Kotlin, Python y Java, así como frameworks y bibliotecas populares. Soy un autodidacta, disfruto leer y eso me permite explorar tecnologías y adaptarme al cualquier desafio. En este momento, busco nuevas oportunidades laborales que me permitan seguir perfeccionando mis habilidades y contribuir a proyectos.",
-	"table": [
-		{
-			"description": "Edad",
-			"value": "29 años"
-		},
-		{
-			"description": "Nombre",
-			"value": "Bernardo Ramirez"
-		},
-		{
-			"description": "Ubicación",
-			"value": "Pachuca, Hidalgo, Mexico"
-		},
-		{
-			"description": "Tecnologías",
-			"value": "Java, JavaScript, Kotlin, Python, SQL, AWS"
-		},
-		{
-			"description": "Frameworks y Librerías",
-			"value": "React, Node, Spring, Astro"
-		},
-		{
-			"description": "Idioma",
-			"value": "Español: nativo, Inglés: B1"
-		},
-		{
-			"description": "Hobbies",
-			"value": "Fotografia"
-		},
-		{
-			"description": "Libro favorito",
-			"value": "El existencialismo es un humanismo de Jean Paul Sartre"
-		}
-	]
+  "hello": "Hola! Soy Bernardo",
+  "about": "Soy un desarrollador full-stack con mucho interés en la tecnología. Durante los ultimos años, me he enfocado en mejorar mis habilidades en desarrollo web, incluyendo el uso de lenguajes como JavaScript, Kotlin, Python y Java, así como frameworks y bibliotecas populares. Soy un autodidacta, disfruto leer y eso me permite explorar tecnologías y adaptarme al cualquier desafio. En este momento, busco nuevas oportunidades laborales que me permitan seguir perfeccionando mis habilidades y contribuir a proyectos.",
+  "table": [
+    {
+      "description": "Edad",
+      "value": "29 años"
+    },
+    {
+      "description": "Nombre",
+      "value": "Bernardo Ramirez"
+    },
+    {
+      "description": "Ubicación",
+      "value": "Pachuca, Hidalgo, Mexico"
+    },
+    {
+      "description": "Tecnologías",
+      "value": "Java, JavaScript, Kotlin, Python, SQL, AWS"
+    },
+    {
+      "description": "Frameworks y Librerías",
+      "value": "React, Node, Spring, Astro"
+    },
+    {
+      "description": "Idioma",
+      "value": "Español: nativo, Inglés: B1"
+    },
+    {
+      "description": "Hobbies",
+      "value": "Fotografia"
+    },
+    {
+      "description": "Libro favorito",
+      "value": "El existencialismo es un humanismo de Jean Paul Sartre"
+    }
+  ]
 }

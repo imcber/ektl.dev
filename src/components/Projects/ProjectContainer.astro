@@ -1,46 +1,49 @@
 ---
-import Cards from './Cards.astro'
+import ProjectCard from "./ProjectCard.astro";
 
-export interface Tech {
+export interface Project {
   id: string;
   name: string;
-  experience: number;
-  skill: string;
+  about: string;
+  task: string;
+  year: string;
+  rol: string;
+  url: string;
 }
 
-const projects = [
-  {
-    projectId: "tar-aero",
-    title: "TAR Aerolíneas",
-    description:
-      "Rediseño de la plataforma de booking y experiencia de usuario para la aerolínea regional.",
-    imageUrl: "/images/projects/tar-banner.png", // Asegúrate que esta imagen exista en 'public/images/projects/'
-    imageAlt: "Vista previa del proyecto TAR Aerolíneas",
-    tags: ["React", "Node.js", "UX/UI", "Typescript"],
-  },
-];
+interface ProjectsEntries {
+  title_page: string;
+  title_year: string;
+  title_rol: string;
+  title_about: string;
+  title_task: string;
+  work: Project[];
+}
 
-const techs: Tech[] = [
-  { id: "js", name: "Javascript", experience: 5, skill: "advanced" },
-  { id: "java", name: "Java", experience: 5, skill: "advanced" },
-  { id: "react", name: "ReactJS", experience: 3, skill: "advanced" },
-  { id: "next", name: "NextJs", experience: 2, skill: "medium" },
-  { id: "spring", name: "Spring", experience: 3, skill: "medium" },
-  { id: "nodejs", name: "Nodejs", experience: 3, skill: "medium" },
-  { id: "mongo", name: "Mongo", experience: 2, skill: "medium" },
-  { id: "sql", name: "SQL", experience: 4, skill: "medium" },
-];
+interface Props {
+  projectsEntries: ProjectsEntries;
+}
+
+const { projectsEntries } = Astro.props;
 ---
 
-<div
-  class="h-screen bg-foreground lg:flex w-full flex flex-col z-10 lg:px-7"
->
+<div class="h-screen bg-foreground lg:flex w-full flex flex-col z-10 lg:px-7">
   <div
     class="w-full lg:w-1/3 flex items-start justify-center lg:justify-start px-7 lg:px-14"
   >
-    <p class="text-5xl">Projects</p>
+    <h1 class="text-5xl">
+      {projectsEntries.title_page}
+    </h1>
   </div>
-  <div class="w-full flex justify-center items-center py-5 ">
-    <Cards techs={techs} />
+  <div class="w-full flex justify-center items-center py-5">
+    <div
+      class="w-full block md:flex justify-center flex-wrap transition-all duration-200 px-3 md:p-0"
+    >
+      {
+        projectsEntries?.work.map((project) => (
+          <ProjectCard project={project} />
+        ))
+      }
+    </div>
   </div>
 </div>

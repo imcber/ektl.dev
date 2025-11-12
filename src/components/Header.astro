@@ -20,12 +20,12 @@ const allEntries = await getCollection("header");
 const availableLangs = allEntries.map((page) => page.id.split("/")[0]);
 
 const entryData = allEntries.find(
-  (page) => page.id.split("/")[0] === currentLang
+  (page) => page.id.split("/")[0] === currentLang,
 )?.data;
 
 if (!entryData) {
   throw new Error(
-    `No se encontró la colección 'header' para el idioma: ${currentLang}`
+    `No se encontró la colección 'header' para el idioma: ${currentLang}`,
   );
 }
 

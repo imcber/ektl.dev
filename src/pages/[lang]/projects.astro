@@ -5,7 +5,7 @@ import Layout from "../../layouts/Layout.astro";
 import { getCollection, type CollectionEntry } from "astro:content";
 
 export async function getStaticPaths() {
-  const pages = await getCollection("home");
+  const pages = await getCollection("projects");
 
   const paths = pages.map((page) => {
     const [lang] = page.id.split("/");
@@ -16,7 +16,7 @@ export async function getStaticPaths() {
 }
 
 interface Props {
-  page: CollectionEntry<"home">;
+  page: CollectionEntry<"projects">;
 }
 
 const { lang } = Astro.params;
@@ -24,10 +24,6 @@ const { page } = Astro.props;
 ---
 
 <Layout currentLang={lang}>
-  <Header
-    currentLang={lang}
-    showBackButton
-    isAbsolute={false}
-  />
-  <ProjectContainer />
+  <Header currentLang={lang} showBackButton isAbsolute={false} />
+  <ProjectContainer projectsEntries={page.data} />
 </Layout>

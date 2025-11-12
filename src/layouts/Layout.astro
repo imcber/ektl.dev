@@ -13,7 +13,7 @@ interface Props {
 const { currentLang } = Astro.props;
 
 const isHome = Astro.url.pathname === `/${currentLang}`;
-const activeTransition = isHome ? screenTransitionBack:screenTransition;
+const activeTransition = isHome ? screenTransitionBack : screenTransition;
 ---
 
 <!doctype html>

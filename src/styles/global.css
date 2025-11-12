@@ -15,6 +15,7 @@
   --font-serif: "Montserrat", "sans-serif";
   --color-foreground: var(--foreground);
   --color-principal: var(--principal);
+  --color-principal_light: var(--principal_light);
   --color-secondary: var(--secondary);
   --color-secondary_light: var(--secondary_light);
 }

@@ -1,0 +1,63 @@
+{
+  "title_page": "Projects",
+  "title_year": "Year",
+  "title_rol": "Rol",
+  "title_about": "About",
+  "title_task": "Task",
+  "work": [
+    {
+      "id": "tar",
+      "name": "TAR México",
+      "about": "TAR México is a flight booking system developed using technologies such as Java and JavaScript. Tar allows flight reservations and offers a variety of payment types such as credit/debit cards, cash, and cryptocurrencies.",
+      "task": "In TAR, backend improvements involve adding functionalities in payments, billing, as well as fixing bugs. Optimizing deployment flows is crucial for a smoother system. In the frontend, refactoring class components to hooks, improving state management, and perfecting client requests.",
+      "year": "2024 - Present",
+      "rol": "Fullstack",
+      "url": "https://tarmexico.com/"
+    },
+    {
+      "id": "coppel",
+      "name": "Coppel App",
+      "about": " Lorem ipsum, dolor sit amet consectetur adipisicing elit. Pariatur quasi illo quos quidem expedita eaque fugiat dolorum rerum magnam quia aliquam esse explicabo sunt reprehenderit eligendi totam, odio alias unde!",
+      "task": " Lorem ipsum, dolor sit amet consectetur adipisicing elit. Pariatur quasi illo quos quidem expedita eaque fugiat dolorum rerum magnam quia aliquam esse explicabo sunt reprehenderit eligendi totam, odio alias unde!",
+      "year": "2025 - Present",
+      "rol": "FrontEnd",
+      "url": "https://play.google.com/store/apps/details?id=com.coppel.coppelapp"
+    },
+    {
+      "id": "needed",
+      "name": "Needed",
+      "about": "Needed is a learning and assessment platform developed with JavaScript and TypeScript technologies. It provides access to training, courses, and certifications through an information package.",
+      "task": "The system was primarily developed to facilitate the exchange of information the company had with its users; however, this system was composed of different patterns such as SSO and development of formulas for evaluation. During this project, I focused mainly on system maintenance.",
+      "year": "2022 - 2023",
+      "rol": "Fullstack",
+      "url": "https://needed.education/"
+    },
+    {
+      "id": "ganalottodo",
+      "name": "Ganalottodo",
+      "about": "Ganalottodo is a site authorized by Pronósticos that allows users to participate in and enjoy their preferred games and draws. During 2022, we developed a ticket distribution system for the raffle of tickets for that year's World Cup, the product was called 'Lánzate al mundial'.",
+      "task": "I entered this project mainly for the development of the raffle system for the World Cup, adding different functions for the correct selection of the winner. Once the product was finished, I maintained the platform's services.",
+      "year": "2021 - 2022",
+      "rol": "Backend",
+      "url": "https://www.ganalottodo.com/#/landing/home"
+    },
+    {
+      "id": "uniken",
+      "name": "Uniken",
+      "about": "Uniken is a product focused on security. Uniken elevates identity from trust to certainty, making every client interaction seamless, secure, and certain.",
+      "task": "At Uniken, I worked on developing private APIs in Python and Java for consuming REST services, adding database connections, buckets, and connections with other APIs, as well as implementing design patterns.",
+      "year": "2023 - 2024",
+      "rol": "Backend",
+      "url": "https://www.uniken.com/"
+    },
+    {
+      "id": "worqout",
+      "name": "Worqout",
+      "about": " Lorem ipsum, dolor sit amet consectetur adipisicing elit. Pariatur quasi illo quos quidem expedita eaque fugiat dolorum rerum magnam quia aliquam esse explicabo sunt reprehenderit eligendi totam, odio alias unde!",
+      "task": " Lorem ipsum, dolor sit amet consectetur adipisicing elit. Pariatur quasi illo quos quidem expedita eaque fugiat dolorum rerum magnam quia aliquam esse explicabo sunt reprehenderit eligendi totam, odio alias unde!",
+      "year": "2021 - 2022",
+      "rol": "FrontEnd",
+      "url": "https://play.google.com/store/apps/details?id=com.coppel.coppelapp"
+    }
+  ]
+}
