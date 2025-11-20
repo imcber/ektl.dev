@@ -9,6 +9,7 @@ export interface Project {
   year: string;
   rol: string;
   url: string;
+  tags: string[];
 }
 
 interface ProjectsEntries {
@@ -37,7 +38,7 @@ const { projectsEntries } = Astro.props;
   </div>
   <div class="w-full flex justify-center items-center py-5">
     <div
-      class="w-full block md:flex justify-center flex-wrap transition-all duration-200 px-3 md:p-0"
+      class="w-full grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6 transition-all duration-200 px-3 md:p-0 max-w-7xl"
     >
       {
         projectsEntries?.work.map((project) => (

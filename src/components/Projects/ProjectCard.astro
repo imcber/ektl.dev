@@ -12,8 +12,9 @@ import Worqout from "../../assets/projects/worqout.jpg";
 interface Props {
   project: Project;
 }
+
 const {
-  project: { id, name },
+  project: { id, name, about, tags, url },
 } = Astro.props;
 
 const projectImage = {
@@ -27,15 +28,59 @@ const projectImage = {
 ---
 
 <div
-  class={`w-full md:w-2/7 min-h-96 border-2 border-principal_light rounded-2xl p-2 my-3 md:m-3 flex-col overflow-hidden relative`}
+  class="group relative overflow-hidden rounded-2xl border border-secondary bg-foreground shadow-xl transition-all duration-300 hover:border-principal_light hover:shadow-2xl hover:shadow-principal_light/20"
 >
-  <Image
-    class="h-56 w-full object-cover rounded-2xl"
-    src={projectImage[id] || Tar}
-    alt={name}
-    priority
-  />
-  <div class="px-6 py-4">
-    <h2 class="text-2xl text-start font-bold">{name}</h2>
+  <div class="h-48 overflow-hidden">
+    <Image
+      class="h-full w-full object-cover transition-transform duration-500 group-hover:scale-[1.03]"
+      src={projectImage[id] || Tar}
+      alt={name}
+      priority
+    />
+  </div>
+
+  <div class="p-5 flex flex-col h-full">
+    <h2 class="text-xl font-extrabold text-principal mb-2 text-start">
+      {name}
+    </h2>
+
+    <p class="text-secondary_light text-sm mb-4 h-16 line-clamp-3 text-justify">
+      {about}
+    </p>
+
+    <div class="flex flex-wrap gap-2 mb-4">
+      {
+        tags
+          .splice(0, 3)
+          .map((tag) => (
+            <span class="bg-secondary text-principal_light text-xs font-medium px-2 py-0.5 rounded-full">
+              {tag}
+            </span>
+          ))
+      }
+    </div>
+
+    <a
+      href={url}
+      target="_blank"
+      rel="noopener noreferrer"
+      class="inline-flex items-center justify-center rounded-lg bg-principal_light px-4 py-2 text-sm font-semibold text-gray-900 transition-colors duration-200 hover:bg-principal_light/90 focus:outline-none focus:ring-2 focus:ring-principal_light focus:ring-offset-2 focus:ring-offset-gray-900"
+    >
+      Ir al Sitio
+      <svg
+        xmlns="http://www.w3.org/2000/svg"
+        class="h-4 w-4 ml-1"
+        fill="none"
+        viewBox="0 0 24 24"
+        stroke="currentColor"
+        stroke-width="2"
+      >
+        <path
+          stroke-linecap="round"
+          stroke-linejoin="round"
+          d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14"
+        ></path>
+      </svg>
+    </a>
   </div>
 </div>

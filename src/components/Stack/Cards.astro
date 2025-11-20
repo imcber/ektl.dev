@@ -1,7 +1,4 @@
 ---
-//import RightArrow from "../assets/right-arrow-secondary-color.svg";
-//import LeftArrow from "../assets/left-arrow-secondary-color.svg";
-
 export interface Tech {
   id: string;
   name: string;
@@ -14,29 +11,69 @@ interface Props {
 }
 
 const { techs } = Astro.props;
+
+const getSkillPercentage = (skill: Tech["skill"]): number => {
+  switch (skill) {
+    case "advanced":
+      return 90;
+    case "medium":
+      return 65;
+    case "beginner":
+      return 35;
+    default:
+      return 0;
+  }
+};
 ---
 
-<div class="block md:flex flex-wrap justify-center transition-all duration-200">
+<div class="grid grid-cols-2 md:grid-cols-4 gap-4 md:gap-6 py-4">
   {
-    techs.map(({ name, experience, skill }) => (
-      <div
-        class={`w-96 h-96 border-2 border-secondary rounded-2xl p-7 my-3 md:m-3 text-secondary flex flex-col justify-between relative`}
-      >
-        <h1 class="text-5xl">{name}</h1>
-        <>
-          <div class="lg:flex flex-col lgtext-2xl ">
-            <div class="flex">
-              <p class="mr-3">Experience:</p>
-              <p class="col-span-2 font-semibold">{`${experience} y`}</p>
-            </div>
-            <div class="flex">
-              <p class="mr-3">Skill:</p>
-              <p class="col-span-2 font-semibold">{skill}</p>
+    techs.map(({ name, experience, skill }) => {
+      const percentage = getSkillPercentage(skill);
+      return (
+        <div class="relative flex flex-col justify-between overflow-hidden rounded-2xl border border-secondary  p-5 text-principal shadow-lg transition-all duration-300 hover:border-principal_light hover:shadow-xl hover:shadow-principal_light/20">
+          <h2 class="text-2xl md:text-4xl font-extrabold mb-5 text-principal_light text-start">
+            {name}
+          </h2>
+
+          <div class="space-y-2 text-sm text-secondary_light">
+            <div class="flex justify-between items-center">
+              <span class="font-medium">Experiencia:</span>
+              <span class="font-bold text-base text-principal">
+                {`${experience} años`}
+              </span>
             </div>
           </div>
-          <div class="absolute top-0 left-0 w-96 h-96 flex items-center justify-between" />
-        </>
-      </div>
-    ))
+
+          <div class="mt-4">
+            <div class="flex justify-between items-center mb-1">
+              <span class="font-medium text-sm text-secondary_light">Habilidad:</span>
+              <span
+                class="font-bold uppercase text-xs tracking-widest"
+                class:list={[
+                  { "text-green-400": skill === "advanced" },
+                  { "text-yellow-400": skill === "medium" },
+                  { "text-red-400": skill === "beginner" },
+                ]}
+              >
+                {skill}
+              </span>
+            </div>
+
+            <div class="w-full bg-gray-700 rounded-full h-2.5">
+              <div
+                class="h-2.5 rounded-full transition-all duration-700 ease-out"
+                style={`width: ${percentage}%;`}
+                class:list={[
+                  { "bg-green-500": skill === "advanced" },
+                  { "bg-yellow-500": skill === "medium" },
+                  { "bg-red-500": skill === "beginner" },
+                ]}
+              />
+            </div>
+          </div>
+        </div>
+      );
+    })
   }
 </div>

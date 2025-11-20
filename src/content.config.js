@@ -85,6 +85,7 @@ const projectsCollection = defineCollection({
         year: z.string(),
         rol: z.string(),
         url: z.string(),
+        tags: z.array(z.string()),
       }),
     ),
   }),

@@ -1,17 +1,6 @@
 ---
 import Cards from "./Cards.astro";
-const projects = [
-  {
-    projectId: "tar-aero",
-    title: "TAR Aerolíneas",
-    description:
-      "Rediseño de la plataforma de booking y experiencia de usuario para la aerolínea regional.",
-    imageUrl: "/images/projects/tar-banner.png", // Asegúrate que esta imagen exista en 'public/images/projects/'
-    imageAlt: "Vista previa del proyecto TAR Aerolíneas",
-    tags: ["React", "Node.js", "UX/UI", "Typescript"],
-  },
-];
-
+// ... (Tu interfaz Tech y el array techs se mantienen) ...
 export interface Tech {
   id: string;
   name: string;
@@ -31,13 +20,13 @@ const techs: Tech[] = [
 ];
 ---
 
-<div class="h-screen bg-foreground lg:flex w-full flex flex-col z-10 lg:px-7">
-  <div
-    class="w-full lg:w-1/3 flex items-start justify-center lg:justify-start px-7 lg:px-14"
-  >
-    <p class="text-5xl">Stack</p>
+<div class="w-full px-4 md:px-8 py-10">
+  <div class="max-w-7xl mx-auto mb-6">
+    <p class="text-5xl font-extrabold text-white mb-2">Stack</p>
+    <p class="text-gray-400 text-lg">Tecnologías y experiencia</p>
   </div>
-  <div class="w-full flex justify-center items-center py-5">
+
+  <div class="max-w-7xl mx-auto">
     <Cards techs={techs} />
   </div>
 </div>

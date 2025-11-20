@@ -12,7 +12,8 @@
       "task": "En TAR, las mejoras en el backend implican añadir funcionalidades en los pagos, facturación, además de corregir errores. Optimizar los flujos de despliegue es fundamental para un sistema más fluido. En el frontend, refactorizar los componentes de clase a hooks, mejorar la gestión del estado y perfeccionar las solicitudes del cliente.",
       "year": "2022 - Present",
       "rol": "Fullstack",
-      "url": "https://tarmexico.com/"
+      "url": "https://tarmexico.com/",
+      "tags": ["js", "java", "spring", "react", "redis", "s3", "open-pay"]
     },
     {
       "id": "coppel",
@@ -21,16 +22,8 @@
       "task": " Lorem ipsum, dolor sit amet consectetur adipisicing elit. Pariatur quasi illo quos quidem expedita eaque fugiat dolorum rerum magnam quia aliquam esse explicabo sunt reprehenderit eligendi totam, odio alias unde!",
       "year": "2022 - Present",
       "rol": "FrontEnd",
-      "url": "https://play.google.com/store/apps/details?id=com.coppel.coppelapp"
-    },
-    {
-      "id": "needed",
-      "name": "Needed",
-      "about": "Needed es una plataforma de aprendizaje y evaluación desarrollada con tecnologías JavaScript y TypeScript. Permite acceder a capacitaciones, cursos y certificaciones mediante un paquete de información.",
-      "task": "El sistema se desarrolló principalmente para facilitar el intercambio de información que tenía la empresa con sus usuarios; sin embargo, este sistema se compuso de diferentes patrones como SSO y desarrollo de fórmulas para evaluación. Durante este proyecto, me enfoque principalmente en el mantenimiento del sistema.",
-      "year": "2022 - 2023",
-      "rol": "Fullstack",
-      "url": "https://needed.education/"
+      "url": "https://play.google.com/store/apps/details?id=com.coppel.coppelapp",
+      "tags": ["js", "java", "spring", "react", "redis", "s3", "open-pay"]
     },
     {
       "id": "ganalottodo",
@@ -39,7 +32,18 @@
       "task": "Entré en este proyecto principalmente para el desarrollo del sistema de rifas para el mundial, agregando diferentes funciones para la correcta selección del ganador. Una vez terminado el producto, le di mantenimiento a los servicios de la plataforma.",
       "year": "2021 - 2022",
       "rol": "Backend",
-      "url": "https://www.ganalottodo.com/#/landing/home"
+      "url": "https://www.ganalottodo.com/#/landing/home",
+      "tags": ["js", "java", "spring", "react", "redis", "s3", "open-pay"]
+    },
+    {
+      "id": "needed",
+      "name": "Needed",
+      "about": "Needed es una plataforma de aprendizaje y evaluación desarrollada con tecnologías JavaScript y TypeScript. Permite acceder a capacitaciones, cursos y certificaciones mediante un paquete de información.",
+      "task": "El sistema se desarrolló principalmente para facilitar el intercambio de información que tenía la empresa con sus usuarios; sin embargo, este sistema se compuso de diferentes patrones como SSO y desarrollo de fórmulas para evaluación. Durante este proyecto, me enfoque principalmente en el mantenimiento del sistema.",
+      "year": "2022 - 2023",
+      "rol": "Fullstack",
+      "url": "https://needed.education/",
+      "tags": ["js", "java", "spring", "react", "redis", "s3", "open-pay"]
     },
     {
       "id": "uniken",
@@ -48,7 +52,8 @@
       "task": "En Uniken, trabaje desarrollando APIS en python y Java para el consumo de servicios REST, agregando conexiones bases de datos, buckets y conexiones con otras APIS, asi como implementacion de patrones de diseño.",
       "year": "2023 - Present",
       "rol": "Backend",
-      "url": "https://www.uniken.com/"
+      "url": "https://www.uniken.com/",
+      "tags": ["js", "java", "spring", "react", "redis", "s3", "open-pay"]
     },
     {
       "id": "worqout",
@@ -57,7 +62,8 @@
       "task": " Lorem ipsum, dolor sit amet consectetur adipisicing elit. Pariatur quasi illo quos quidem expedita eaque fugiat dolorum rerum magnam quia aliquam esse explicabo sunt reprehenderit eligendi totam, odio alias unde!",
       "year": "2021 - 2022",
       "rol": "FrontEnd",
-      "url": "https://worqout.io/"
+      "url": "https://worqout.io/",
+      "tags": ["js", "java", "spring", "react", "redis", "s3", "open-pay"]
     }
   ]
 }
