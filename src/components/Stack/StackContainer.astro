@@ -1,6 +1,6 @@
 ---
 import Cards from "./Cards.astro";
-// ... (Tu interfaz Tech y el array techs se mantienen) ...
+
 export interface Tech {
   id: string;
   name: string;
@@ -9,21 +9,28 @@ export interface Tech {
 }
 
 const techs: Tech[] = [
-  { id: "js", name: "Javascript", experience: 5, skill: "advanced" },
   { id: "java", name: "Java", experience: 5, skill: "advanced" },
+  { id: "js", name: "Javascript", experience: 5, skill: "advanced" },
+  { id: "ts", name: "Typescript", experience: 3, skill: "advanced" },
+  { id: "python", name: "Python", experience: 3, skill: "medium" },
+  { id: "kotlin", name: "Kotlin", experience: 3, skill: "medium" },
+  { id: "spring", name: "Spring", experience: 3, skill: "medium" },
+  { id: "strapi", name: "Strapi", experience: 1, skill: "medium" },
   { id: "react", name: "ReactJS", experience: 3, skill: "advanced" },
   { id: "next", name: "NextJs", experience: 2, skill: "medium" },
-  { id: "spring", name: "Spring", experience: 3, skill: "medium" },
-  { id: "nodejs", name: "Nodejs", experience: 3, skill: "medium" },
+  { id: "nodejs", name: "Nodejs", experience: 3, skill: "advanced" },
+  { id: "nestjs", name: "NestJs", experience: 3, skill: "medium" },
   { id: "mongo", name: "Mongo", experience: 2, skill: "medium" },
-  { id: "sql", name: "SQL", experience: 4, skill: "medium" },
+  { id: "sql", name: "MySQL", experience: 4, skill: "medium" },
+  { id: "aws", name: "AWS", experience: 2, skill: "medium" },
+  { id: "git", name: "Git", experience: 5, skill: "advanced" },
+  { id: "jenkins", name: "Jenkins", experience: 2, skill: "medium" },
 ];
 ---
 
-<div class="w-full px-4 md:px-8 py-10">
-  <div class="max-w-7xl mx-auto mb-6">
-    <p class="text-5xl font-extrabold text-white mb-2">Stack</p>
-    <p class="text-gray-400 text-lg">Tecnologías y experiencia</p>
+<div class="w-full px-4 md:px-7 py-10">
+  <div class="max-w-7xl lg:px-20 mb-6">
+    <p class="text-5xl font-extrabold text-principal mb-2 text-start">Stack</p>
   </div>
 
   <div class="max-w-7xl mx-auto">

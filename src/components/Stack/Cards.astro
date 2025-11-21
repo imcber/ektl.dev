@@ -36,7 +36,7 @@ const getSkillPercentage = (skill: Tech["skill"]): number => {
             {name}
           </h2>
 
-          <div class="space-y-2 text-sm text-secondary_light">
+          <div class="space-y-2 text-xs md:text-sm text-secondary_light">
             <div class="flex justify-between items-center">
               <span class="font-medium">Experiencia:</span>
               <span class="font-bold text-base text-principal">
@@ -60,7 +60,7 @@ const getSkillPercentage = (skill: Tech["skill"]): number => {
               </span>
             </div>
 
-            <div class="w-full bg-gray-700 rounded-full h-2.5">
+            <div class="w-full bg-secondary rounded-full h-2.5">
               <div
                 class="h-2.5 rounded-full transition-all duration-700 ease-out"
                 style={`width: ${percentage}%;`}

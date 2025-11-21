@@ -28,13 +28,13 @@ interface Props {
 const { projectsEntries } = Astro.props;
 ---
 
-<div class="h-screen bg-foreground lg:flex w-full flex flex-col z-10 lg:px-7">
+<div class="w-full px-4 md:px-7 py-10">
   <div
-    class="w-full lg:w-1/3 flex items-start justify-center lg:justify-start px-7 lg:px-14"
+    class="w-full lg:w-1/3 flex items-start justify-center lg:justify-start lg:px-20"
   >
-    <h1 class="text-5xl">
+    <p class="text-5xl font-extrabold mb-2">
       {projectsEntries.title_page}
-    </h1>
+    </p>
   </div>
   <div class="w-full flex justify-center items-center py-5">
     <div

@@ -20,12 +20,12 @@ const allEntries = await getCollection("header");
 const availableLangs = allEntries.map((page) => page.id.split("/")[0]);
 
 const entryData = allEntries.find(
-  (page) => page.id.split("/")[0] === currentLang,
+  (page) => page.id.split("/")[0] === currentLang
 )?.data;
 
 if (!entryData) {
   throw new Error(
-    `No se encontró la colección 'header' para el idioma: ${currentLang}`,
+    `No se encontró la colección 'header' para el idioma: ${currentLang}`
   );
 }
 
@@ -55,11 +55,11 @@ const strokeColor = isDarkmode ? "#10160a" : "#f2f5f3";
   class:list={[
     "w-full flex flex-col z-10 py-4 px-2 lg:p-14",
     isAbsolute && "absolute",
-    isDarkmode ? "text-foreground" : "text-principal",
+    isDarkmode ? "text-foreground" : "text-secondary",
   ]}
 >
   <div
-    class="flex md:justify-end items-center text-xl md:text-2xl font-sans flex-wrap"
+    class="flex md:justify-end items-center text-lg md:text-2xl font-sans flex-wrap"
   >
     <div class="w-full md:w-5/6 flex justify-between items-center">
       <div class="mx-2 md:mx-4 md:mr-auto">
@@ -97,7 +97,7 @@ const strokeColor = isDarkmode ? "#10160a" : "#f2f5f3";
               </svg>
             </a>
           ) : (
-            <a href={homeHref} class="cursor-pointer ">
+            <a href={homeHref} class="cursor-pointer text-principal">
               ektl.dev
             </a>
           )
@@ -107,7 +107,12 @@ const strokeColor = isDarkmode ? "#10160a" : "#f2f5f3";
       {
         navLinks.map((link) => (
           <a
-            class="cursor-pointer mx-2 sm:mx-4 font-bold hover:text-secondary_light duration-300"
+          class:list={[
+                "cursor-pointer mx-2 sm:mx-4 font-bold hover:text-secondary_light duration-300",
+                currentPath === link.href && isDarkmode && "text-secondary_light",
+                currentPath === link.href && !isDarkmode && "text-principal",
+                currentPath.replaceAll("/","") === currentLang && "text-principal"
+              ]}
             href={link.href}
           >
             {link.label}
@@ -121,7 +126,11 @@ const strokeColor = isDarkmode ? "#10160a" : "#f2f5f3";
         {
           availableLangs.map((language) => (
             <a
-              class="mr-1 cursor-pointer hover:text-secondary_light transition-all duration-300"
+              class:list={[
+                "mr-1 cursor-pointer hover:text-secondary_light transition-all duration-300",
+                currentLang === language && isDarkmode && "text-secondary_light",
+                currentLang === language && !isDarkmode && "text-principal",
+              ]}
               href={`/${language}${baseSlug}`}
             >
               [ {language} ]
