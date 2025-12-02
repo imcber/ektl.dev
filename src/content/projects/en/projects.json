@@ -13,7 +13,7 @@
       "year": "2024 - Present",
       "rol": "Fullstack",
       "url": "https://tarmexico.com/",
-      "tags": ["js", "java", "spring", "react", "redis", "s3", "open-pay"]
+      "tags": ["js", "java", "spring", "react", "open-pay"]
     },
     {
       "id": "coppel",
@@ -23,7 +23,7 @@
       "year": "2025 - Present",
       "rol": "FrontEnd",
       "url": "https://play.google.com/store/apps/details?id=com.coppel.coppelapp",
-      "tags": ["js", "java", "react", "redis", "s3", "open-pay"]
+      "tags": ["kotlin", "compose", "android", "firebase"]
     },
     {
       "id": "ganalottodo",
@@ -33,7 +33,7 @@
       "year": "2021 - 2022",
       "rol": "Backend",
       "url": "https://www.ganalottodo.com/#/landing/home",
-      "tags": ["js", "java", "react", "redis", "s3", "open-pay"]
+      "tags": ["angular", "java", "spring", "nodejs"]
     },
     {
       "id": "needed",
@@ -43,7 +43,7 @@
       "year": "2022 - 2023",
       "rol": "Fullstack",
       "url": "https://needed.education/",
-      "tags": ["js", "java", "react", "redis", "s3", "open-pay"]
+      "tags": ["js", "nodejs", "nestJS", "react"]
     },
     {
       "id": "uniken",
@@ -53,7 +53,7 @@
       "year": "2023 - 2024",
       "rol": "Backend",
       "url": "https://www.uniken.com/",
-      "tags": ["js", "java", "react", "redis", "s3", "open-pay"]
+      "tags": ["python", "js", "fastApi", "mongo"]
     },
     {
       "id": "worqout",
@@ -63,7 +63,7 @@
       "year": "2021 - 2022",
       "rol": "FrontEnd",
       "url": "https://play.google.com/store/apps/details?id=com.coppel.coppelapp",
-      "tags": ["js", "java", "react", "redis", "s3", "open-pay"]
+      "tags": ["react", "nodejs", "js"]
     }
   ]
 }

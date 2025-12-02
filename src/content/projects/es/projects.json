@@ -18,12 +18,12 @@
     {
       "id": "coppel",
       "name": "Coppel App",
-      "about": " Lorem ipsum, dolor sit amet consectetur adipisicing elit. Pariatur quasi illo quos quidem expedita eaque fugiat dolorum rerum magnam quia aliquam esse explicabo sunt reprehenderit eligendi totam, odio alias unde!",
-      "task": " Lorem ipsum, dolor sit amet consectetur adipisicing elit. Pariatur quasi illo quos quidem expedita eaque fugiat dolorum rerum magnam quia aliquam esse explicabo sunt reprehenderit eligendi totam, odio alias unde!",
-      "year": "2022 - Present",
+      "about": "Como frontend fue un reto trabajar en la aplicación de coppel, sin embargo, logre adaptarme al desafio y poder publicar cambios en la app.",
+      "task": "En la app me dedique principalmente a entender la estructura de datos para la implementación de diferentes metodos para analiticas, ademas de implementar vistas UI uitlizando compose.",
+      "year": "2024 - 2025",
       "rol": "FrontEnd",
       "url": "https://play.google.com/store/apps/details?id=com.coppel.coppelapp",
-      "tags": ["js", "java", "spring", "react", "redis", "s3", "open-pay"]
+      "tags": ["kotlin", "compose", "android", "firebase"]
     },
     {
       "id": "ganalottodo",
@@ -33,7 +33,7 @@
       "year": "2021 - 2022",
       "rol": "Backend",
       "url": "https://www.ganalottodo.com/#/landing/home",
-      "tags": ["js", "java", "spring", "react", "redis", "s3", "open-pay"]
+      "tags": ["angular", "java", "spring", "nodejs"]
     },
     {
       "id": "needed",
@@ -43,7 +43,7 @@
       "year": "2022 - 2023",
       "rol": "Fullstack",
       "url": "https://needed.education/",
-      "tags": ["js", "java", "spring", "react", "redis", "s3", "open-pay"]
+      "tags": ["js", "nodejs", "nestJS", "react"]
     },
     {
       "id": "uniken",
@@ -53,17 +53,17 @@
       "year": "2023 - Present",
       "rol": "Backend",
       "url": "https://www.uniken.com/",
-      "tags": ["js", "java", "spring", "react", "redis", "s3", "open-pay"]
+      "tags": ["python", "js", "fastApi", "mongo"]
     },
     {
-      "id": "worqout",
-      "name": "Worqout",
-      "about": " Lorem ipsum, dolor sit amet consectetur adipisicing elit. Pariatur quasi illo quos quidem expedita eaque fugiat dolorum rerum magnam quia aliquam esse explicabo sunt reprehenderit eligendi totam, odio alias unde!",
-      "task": " Lorem ipsum, dolor sit amet consectetur adipisicing elit. Pariatur quasi illo quos quidem expedita eaque fugiat dolorum rerum magnam quia aliquam esse explicabo sunt reprehenderit eligendi totam, odio alias unde!",
+      "id": "nebular",
+      "name": "Nebular",
+      "about": "La idea de Nebular es ser el mejor sistema de pagos del mundo utilizando criptomonedas, haciendo que los pagos sean reducidos e instantaneos.",
+      "task": "Como Fullstack me dedique a coordinar los servicios con la UI de manera efectiva y correcta, ademas de mantener el Backend.",
       "year": "2021 - 2022",
-      "rol": "FrontEnd",
-      "url": "https://worqout.io/",
-      "tags": ["js", "java", "spring", "react", "redis", "s3", "open-pay"]
+      "rol": "Fullstack",
+      "url": "/",
+      "tags": ["react", "nodejs", "js"]
     }
   ]
 }
