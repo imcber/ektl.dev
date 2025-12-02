@@ -1,13 +1,9 @@
-name: Despliegue de Astro a GitHub Pages
+name: Despliegue de Astro a GitHub Pages (pnpm)
 
 on:
   push:
     branches:
       - main 
-  pull_request:
-    branches: 
-      - main
-      
   workflow_dispatch:
 
 permissions:
@@ -23,17 +19,20 @@ jobs:
       - name: Checkout del Repositorio
         uses: actions/checkout@v4
       
-      - name: Configurar Node.js (v18)
+      - name: Configurar Node.js (v18) y pnpm
         uses: actions/setup-node@v4
         with:
           node-version: '18'
-          cache: npm 
+          cache: 'pnpm' 
+          
+      - name: Instalar pnpm
+        run: npm install -g pnpm
 
-      - name: Instalar Dependencias
-        run: npm ci 
+      - name: Instalar Dependencias con pnpm
+        run: pnpm install --frozen-lockfile 
 
       - name: Construir el Sitio de Astro
-        run: npm run build
+        run: pnpm run build
         
       - name: Configurar GitHub Pages
         uses: actions/configure-pages@v4
