@@ -30,8 +30,11 @@ if (!entryData) {
 }
 
 const currentPath = Astro.url.pathname;
-const baseSlug = currentPath.replace(new RegExp(`^/${currentLang}`), "");
-const homeHref = `/${currentLang}`;
+const baseSlug = currentPath.split('/').pop();
+const homeHref = `/${currentLang}/`;
+
+console.log({currentPath, baseSlug});
+
 
 const navLinks = [
   {
@@ -131,7 +134,7 @@ const strokeColor = isDarkmode ? "#10160a" : "#f2f5f3";
                 currentLang === language && isDarkmode && "text-secondary_light",
                 currentLang === language && !isDarkmode && "text-principal",
               ]}
-              href={`/${language}${baseSlug}`}
+              href={`/${language}/${baseSlug}`}
             >
               [ {language} ]
             </a>

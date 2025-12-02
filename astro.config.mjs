@@ -7,7 +7,8 @@ export default defineConfig({
     locales: ["es", "en"],
     defaultLocale: "es",
     routing: {
-      strategy: 'prefix'
+      strategy: 'prefix',
+      prefixDefaultLocale:true
     },
     base: '/ektl.dev',
   },
