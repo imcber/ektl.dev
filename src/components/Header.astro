@@ -29,24 +29,22 @@ if (!entryData) {
   );
 }
 
+const prefix = 'ektl.dev'
 const currentPath = Astro.url.pathname;
 const baseSlug = currentPath.split('/').pop();
-const homeHref = `/${currentLang}/`;
-
-console.log({currentPath, baseSlug});
-
+const homeHref = `/${prefix}/${currentLang}/`;
 
 const navLinks = [
   {
-    href: `./about-me`,
+    href: `/${prefix}/${currentLang}/about-me`,
     label: entryData["about-me"],
   },
   {
-    href: `./projects`,
+    href: `/${prefix}/${currentLang}/projects`,
     label: entryData.projects,
   },
   {
-    href: `./stack`,
+    href: `/${prefix}/${currentLang}/stack`,
     label: entryData.stack,
   },
 ];
@@ -112,7 +110,7 @@ const strokeColor = isDarkmode ? "#10160a" : "#f2f5f3";
           <a
           class:list={[
                 "cursor-pointer mx-2 sm:mx-4 font-bold hover:text-secondary_light duration-300",
-                currentPath === link.href && isDarkmode && "text-principal",
+                currentPath === link.href && isDarkmode && "text-secondary_light",
                 currentPath === link.href && !isDarkmode && "text-principal",
                 currentPath.replaceAll("/","") === currentLang && "text-principal"
               ]}
@@ -134,7 +132,7 @@ const strokeColor = isDarkmode ? "#10160a" : "#f2f5f3";
                 currentLang === language && isDarkmode && "text-secondary_light",
                 currentLang === language && !isDarkmode && "text-principal",
               ]}
-              href={`/${language}/${baseSlug}`}
+              href={`/${prefix}/${language}/${baseSlug}`}
             >
               [ {language} ]
             </a>
