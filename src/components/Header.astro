@@ -31,7 +31,9 @@ if (!entryData) {
 
 const prefix = 'ektl.dev'
 const currentPath = Astro.url.pathname;
-const baseSlug = currentPath.split('/').pop();
+const baseSlug = currentPath.replace(new RegExp(`^/ektl.dev/${currentLang}`), "");
+console.log({currentPath, baseSlug});
+
 const homeHref = `/${prefix}/${currentLang}/`;
 
 const navLinks = [
@@ -132,7 +134,7 @@ const strokeColor = isDarkmode ? "#10160a" : "#f2f5f3";
                 currentLang === language && isDarkmode && "text-secondary_light",
                 currentLang === language && !isDarkmode && "text-principal",
               ]}
-              href={`/${prefix}/${language}/${baseSlug}`}
+              href={`/${prefix}/${language}${baseSlug}`}
             >
               [ {language} ]
             </a>
