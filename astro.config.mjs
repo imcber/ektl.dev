@@ -12,5 +12,5 @@ export default defineConfig({
     plugins: [tailwindcss()],
   },
 
-  base: "/ekatl.dev/",
+  base: "/",
 });
