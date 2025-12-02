@@ -5,7 +5,10 @@ import lineClamp from "@tailwindcss/line-clamp";
 export default defineConfig({
   i18n: {
     locales: ["es", "en"],
-    defaultLocale: "es"
+    defaultLocale: "es",
+    routing: {
+      prefixDefaultLocale:true
+    }
   },
 
   vite: {
