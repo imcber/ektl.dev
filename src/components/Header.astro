@@ -55,7 +55,7 @@ const strokeColor = isDarkmode ? "#10160a" : "#f2f5f3";
   class:list={[
     "w-full flex flex-col z-10 py-4 px-2 lg:p-14",
     isAbsolute && "absolute",
-    isDarkmode ? "text-foreground" : "text-secondary",
+    isDarkmode ? "text-foreground" : "text-secondary_light",
   ]}
 >
   <div
@@ -109,7 +109,7 @@ const strokeColor = isDarkmode ? "#10160a" : "#f2f5f3";
           <a
           class:list={[
                 "cursor-pointer mx-2 sm:mx-4 font-bold hover:text-secondary_light duration-300",
-                currentPath === link.href && isDarkmode && "text-secondary_light",
+                currentPath === link.href && isDarkmode && "text-principal",
                 currentPath === link.href && !isDarkmode && "text-principal",
                 currentPath.replaceAll("/","") === currentLang && "text-principal"
               ]}

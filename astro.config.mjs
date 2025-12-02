@@ -9,13 +9,13 @@ export default defineConfig({
     routing: {
       strategy: 'prefix'
     },
-    base: '/ekatl.dev',
+    base: '/ektl.dev',
   },
 
   vite: {
     plugins: [tailwindcss()],
   },
 
-  base: '/ekatl.dev/', 
-  site: "https://ekatl.dev",
+  base: '/ektl.dev/', 
+  site: "https://ektl.dev",
 });
