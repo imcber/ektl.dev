@@ -30,16 +30,13 @@ const activeTransition = isHome ? screenTransitionBack : screenTransition;
     <CommonHead />
     <script async src="https://www.googletagmanager.com/gtag/js?id=G-3GFXE31GD8"
     ></script><script is:inline>
-      // Inicialización global de dataLayer y la función gtag
       window.dataLayer = window.dataLayer || [];
       function gtag() {
         dataLayer.push(arguments);
       }
       gtag("js", new Date());
 
-      // Configuración del seguimiento con el ID de medición inyectado por Astro.
-      // Astro reemplazará {GA4_TRACKING_ID} con el valor de la variable de entorno.
-      gtag("config", "{GA4_TRACKING_ID}");
+      gtag("config", "G-3GFXE31GD8");
     </script></head
   >
 
