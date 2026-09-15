@@ -1,7 +1,7 @@
 {
   "title_page": "Projects",
   "title_year": "Year",
-  "title_rol": "Rol",
+  "title_rol": "Role",
   "title_about": "About",
   "title_task": "Task",
   "title_visit_site": "Visit site",
@@ -9,62 +9,62 @@
     {
       "id": "nubia",
       "name": "Nubia",
-      "about": "Nubia is a conversational agent that allows users to book and quote flights directly through WhatsApp, including payment within the same conversation.",
-      "task": "I developed the agent's backend in Python, integrating a language model (LLM) to understand user intent and connecting it with the booking engine. Built on a hexagonal, event-driven architecture for a seamless chat experience.",
+      "about": "Nubia is a conversational agent for quoting and booking TAR flights through WhatsApp.",
+      "task": "I developed the backend in Python, integrated a language model with the booking engine, and structured the solution around hexagonal architecture and event-driven communication.",
       "year": "2024 - Present",
-      "rol": "Backend",
+      "rol": "Backend Developer",
       "url": "https://tarmexico.com/",
       "tags": ["python", "llm", "whatsapp", "event-driven"]
     },
     {
       "id": "wallets",
-      "name": "Wallets Migration — Ganalottodo",
-      "about": "Redesign and migration of Ganalottodo's wallet system toward a new architecture based on Blnk (ledger), unifying multiple wallets into a consistent model and reinforcing balance integrity.",
-      "task": "I led the redesign and migration of the wallet system, handling the migration design and the safe transfer of data and balances, with the backend built in Java and Spring.",
+      "name": "Wallet Migration — Ganalottodo",
+      "about": "Redesign of Ganalottodo's wallet system around Blnk to unify balance management.",
+      "task": "I led the system redesign and migration, defined the strategy for transferring data and balances, and developed the backend with Java and Spring.",
       "year": "2024 - 2025",
-      "rol": "Backend",
+      "rol": "Backend Developer",
       "url": "https://www.ganalottodo.com/",
       "tags": ["java", "spring", "blnk", "ledger"]
     },
     {
       "id": "coppel",
       "name": "Coppel App",
-      "about": "Working on the Coppel app as a frontend developer was a challenge, but I managed to adapt and successfully publish changes to the app.",
-      "task": "I focused mainly on understanding the data structure for implementing different analytics methods, as well as building UI views using Compose.",
+      "about": "Coppel's Android application, developed with Kotlin and Jetpack Compose.",
+      "task": "I built analytics modules around the existing data structure and implemented interfaces with Jetpack Compose. I also contributed to publishing application updates.",
       "year": "2024 - 2025",
-      "rol": "FrontEnd",
+      "rol": "Android Developer",
       "url": "https://play.google.com/store/apps/details?id=com.coppel.coppelapp",
       "tags": ["kotlin", "compose", "android", "firebase"]
     },
     {
       "id": "tar",
       "name": "TAR México",
-      "about": "TAR México is a flight booking system developed using technologies such as Java and JavaScript. Tar allows flight reservations and offers a variety of payment types such as credit/debit cards, cash, and cryptocurrencies.",
-      "task": "In TAR, backend improvements involve adding functionalities in payments, billing, as well as fixing bugs. Optimizing deployment flows is crucial for a smoother system. In the frontend, refactoring class components to hooks, improving state management, and perfecting client requests.",
-      "year": "2024 - Present",
-      "rol": "Fullstack",
+      "about": "TAR México is a flight-booking platform with multiple payment methods and passenger services.",
+      "task": "I implemented and maintained payment and billing features across Java/Spring microservices. On the frontend, I migrated class components to hooks, improved state management, and optimized backend requests and deployment workflows.",
+      "year": "2022 - Present",
+      "rol": "Full-Stack Developer",
       "url": "https://tarmexico.com/",
-      "tags": ["js", "java", "spring", "react", "open-pay"]
+      "tags": ["JavaScript", "Java", "Spring", "React", "Openpay"]
     },
     {
       "id": "needed",
       "name": "Needed",
-      "about": "Needed is a learning and assessment platform developed with JavaScript and TypeScript technologies. It provides access to training, courses, and certifications through an information package.",
-      "task": "The system was primarily developed to facilitate the exchange of information the company had with its users; however, this system was composed of different patterns such as SSO and development of formulas for evaluation. During this project, I focused mainly on system maintenance.",
+      "about": "Needed is a learning and assessment platform for managing training, courses, and certifications.",
+      "task": "I maintained its frontend and backend, contributed to SSO authentication flows, and worked on the business logic used to calculate assessments.",
       "year": "2022 - 2023",
-      "rol": "Fullstack",
+      "rol": "Full-Stack Developer",
       "url": "https://needed.education/",
       "tags": ["js", "nodejs", "nestJS", "react"]
     },
     {
       "id": "uniken",
       "name": "Uniken",
-      "about": "Uniken is a product focused on security. Uniken elevates identity from trust to certainty, making every client interaction seamless, secure, and certain.",
-      "task": "At Uniken, I worked on developing private APIs in Python and Java for consuming REST services, adding database connections, buckets, and connections with other APIs, as well as implementing design patterns.",
+      "about": "Uniken is a digital identity and security platform designed to protect customer interactions.",
+      "task": "I developed private APIs in Python/FastAPI and Java to integrate REST services, databases, S3 buckets, and external providers using dependency injection.",
       "year": "2023 - 2024",
-      "rol": "Backend",
+      "rol": "Backend Developer",
       "url": "https://www.uniken.com/",
-      "tags": ["python", "js", "fastApi", "mongo"]
+      "tags": ["Python", "Java", "FastAPI", "S3", "DI"]
     }
   ]
 }

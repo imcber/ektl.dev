@@ -1,26 +1,22 @@
 {
-  "hello": "Hola! Soy Bernardo",
-  "about": "Soy un desarrollador full-stack con mucho interés en la tecnología. Durante los ultimos años, me he enfocado en mejorar mis habilidades en desarrollo web, incluyendo el uso de lenguajes como JavaScript, Kotlin, Python y Java, así como frameworks y bibliotecas populares. Soy un autodidacta, disfruto leer y eso me permite explorar tecnologías y adaptarme al cualquier desafio. En este momento, busco nuevas oportunidades laborales que me permitan seguir perfeccionando mis habilidades y contribuir a proyectos.",
+  "hello": "¡Hola! Soy Bernardo",
+  "about": "Soy Bernardo Ramírez, desarrollador full-stack con siete años de experiencia construyendo y optimizando sistemas web, APIs y aplicaciones móviles. He colaborado en productos para aviación, comercio, banca, seguridad y educación con Java, Python, Kotlin y TypeScript. Me especializo en integrar servicios, diseñar soluciones desacopladas y llevar funcionalidades desde su definición hasta producción. Disfruto aprender, compartir decisiones técnicas y ayudar al equipo a entregar software mantenible.",
   "table": [
     {
-      "description": "Edad",
-      "value": "29 años"
-    },
-    {
       "description": "Nombre",
-      "value": "Bernardo Ramirez"
+      "value": "Bernardo Ramírez"
     },
     {
       "description": "Ubicación",
-      "value": "Pachuca, Hidalgo, Mexico"
+      "value": "Pachuca, Hidalgo, México"
     },
     {
-      "description": "Tecnologías",
-      "value": "Java, JavaScript, Kotlin, Python, SQL, AWS"
+      "description": "Especialidades",
+      "value": "APIs, integraciones, sistemas orientados a eventos, web y Android"
     },
     {
-      "description": "Frameworks y Librerías",
-      "value": "React, Node, Spring, Astro"
+      "description": "Stack principal",
+      "value": "Java, Python, Kotlin, TypeScript, Spring, FastAPI, React, Node.js"
     },
     {
       "description": "Idioma",
@@ -28,7 +24,7 @@
     },
     {
       "description": "Hobbies",
-      "value": "Fotografia"
+      "value": "Fotografía"
     },
     {
       "description": "Libro favorito",

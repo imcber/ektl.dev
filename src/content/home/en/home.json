@@ -4,15 +4,15 @@
     "name": " Bernardo,",
     "rest": " but call me",
     "alias": " Nauseu'x",
-    "profile": "I am a Full-Stack Developer with seven years of experience.",
+    "profile": "I'm a full-stack developer with seven years of experience building solutions.",
     "projects": "projects",
     "about": " more about me",
     "tooltip": "It is the name I take as Dungeon Master",
-    "contact": "contact"
+    "contact": "Let's talk"
   },
   "contact": {
     "touch": "Get in touch",
-    "description": "Should you have any questions? Or just want to chat about tech, software architecture, and best practices? Feel free to contact me.",
+    "description": "Have a project, an opportunity, or a technical challenge? Let's talk about full-stack development, software architecture, and integrations.",
     "resume": "Download resume",
     "social": [
       {
@@ -20,12 +20,12 @@
         "url": "https://github.com/imcber"
       },
       {
-        "title": "instagram",
-        "url": "https://www.instagram.com/imcber1/"
-      },
-      {
         "title": "linkedin",
         "url": "https://www.linkedin.com/in/imcber/"
+      },
+      {
+        "title": "instagram",
+        "url": "https://www.instagram.com/imcber1/"
       }
     ]
   }

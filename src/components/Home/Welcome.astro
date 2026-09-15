@@ -19,7 +19,7 @@ interface Props {
 }
 
 const {
-  greetings: { hello, name, rest, alias, profile, tooltip, contact },
+  greetings: { hello, name, rest, alias, profile, tooltip, contact, projects },
 } = Astro.props;
 ---
 
@@ -45,8 +45,14 @@ const {
       </h2>
 
       <div
-        class="text-xl text-principal text-center w-full lg:w-2/6 flex justify-center my-4"
+        class="text-xl text-principal text-center w-full lg:w-2/6 flex flex-wrap gap-3 justify-center my-4"
       >
+        <a
+          class="bg-principal text-foreground hover:bg-principal_light px-4 py-2 rounded-md transition-colors duration-300 md:text-2xl"
+          href="projects/"
+        >
+          <span>{projects}</span>
+        </a>
         <a
           class="border border-current text-principal_light hover:bg-principal hover:text-foreground px-4 py-2 rounded-md transition-colors duration-300 md:text-2xl"
           href="#contact"

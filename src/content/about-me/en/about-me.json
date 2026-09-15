@@ -1,26 +1,22 @@
 {
   "hello": "Hi! I'm Bernardo",
-  "about": "I am a passionate Mexican Full-Stack developer with a deep interest in technology. Over the past year, I have focused on improving my skills in web development, including using languages like JavaScript, TypeScript, and Java, as well as popular frameworks and libraries. As a self-taught learner, I find great enjoyment in exploring new technologies and reading extensively to stay up-to-date with industry trends. Now, I am seeking new opportunities that allow me to continue honing my skills and contribute to exciting projects.",
+  "about": "I'm Bernardo Ramírez, a full-stack developer with seven years of experience building and optimizing web systems, APIs, and mobile applications. I have contributed to products across aviation, retail, banking, security, and education using Java, Python, Kotlin, and TypeScript. I specialize in service integrations, decoupled system design, and taking features from definition to production. I enjoy learning, sharing technical decisions, and helping teams deliver maintainable software.",
   "table": [
     {
-      "description": "Age",
-      "value": "29"
-    },
-    {
       "description": "Name",
-      "value": "Bernardo Ramirez"
+      "value": "Bernardo Ramírez"
     },
     {
       "description": "Location",
       "value": "Pachuca, Hidalgo, Mexico"
     },
     {
-      "description": "Main Technologies",
-      "value": "Java, JavaScript, Kotlin, Python, SQL, AWS"
+      "description": "Specialties",
+      "value": "APIs, integrations, event-driven systems, web, and Android"
     },
     {
-      "description": "Main Frameworks and Libraries",
-      "value": "React, Node, Spring, Astro"
+      "description": "Core stack",
+      "value": "Java, Python, Kotlin, TypeScript, Spring, FastAPI, React, Node.js"
     },
     {
       "description": "Languages",
@@ -32,7 +28,7 @@
     },
     {
       "description": "Favorite book",
-      "value": "Existentialism & Humanism by Albert Camus"
+      "value": "Existentialism Is a Humanism by Jean-Paul Sartre"
     }
   ]
 }

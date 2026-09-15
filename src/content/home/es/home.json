@@ -1,10 +1,10 @@
 {
   "greetings": {
-    "hello": "Hola! Soy",
+    "hello": "¡Hola! Soy",
     "name": " Bernardo,",
-    "rest": " pero diganme",
+    "rest": " pero díganme",
     "alias": " Nauseu'x",
-    "profile": "Soy un desarrollador Full-Stack con siete años de experiencia.",
+    "profile": "Soy desarrollador full-stack con siete años creando soluciones de alto impacto.",
     "projects": "proyectos",
     "about": " quien soy",
     "tooltip": "Es el nombre que tomo como Dungeon Master",
@@ -12,7 +12,7 @@
   },
   "contact": {
     "touch": "Ponte en contacto",
-    "description": "Tienes alguna consulta o duda? O solo quieres platicar sobre tecnologia, arquitectura de software  o buenas practicas, no dudes en contactarme",
+    "description": "¿Tienes un proyecto, una oportunidad o un reto técnico? Conversemos sobre desarrollo full-stack, arquitectura de software e integraciones.",
     "resume": "Descarga CV",
     "social": [
       {
@@ -20,12 +20,12 @@
         "url": "https://github.com/imcber"
       },
       {
-        "title": "instagram",
-        "url": "https://www.instagram.com/imcber1/"
-      },
-      {
         "title": "linkedin",
         "url": "https://www.linkedin.com/in/imcber/"
+      },
+      {
+        "title": "instagram",
+        "url": "https://www.instagram.com/imcber1/"
       }
     ]
   }

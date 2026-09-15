@@ -16,7 +16,7 @@ interface Props {
 }
 
 const {
-  project: { id, name, about, tags, url },
+  project: { id, name, about, task, year, rol, tags, url },
   visitSiteLabel,
 } = Astro.props;
 
@@ -48,8 +48,20 @@ const projectImage: Record<string, typeof Tar> = {
       {name}
     </h2>
 
-    <p class="text-secondary_light text-sm mb-4 h-16 line-clamp-3 text-justify">
+    <div
+      class="mb-3 flex flex-wrap gap-x-3 gap-y-1 text-xs font-semibold uppercase tracking-wide text-principal_light"
+    >
+      <span>{rol}</span>
+      <span aria-hidden="true">•</span>
+      <span>{year}</span>
+    </div>
+
+    <p class="text-secondary_light text-sm mb-3 text-left">
       {about}
+    </p>
+
+    <p class="text-secondary_light text-sm mb-4 text-left">
+      {task}
     </p>
 
     <div class="flex flex-wrap gap-2 mb-4">
