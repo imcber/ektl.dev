@@ -66,7 +66,10 @@ test("el nombre del sitio navega a home con una transición vertical", async ({
 
 test("atrás y adelante conservan la ruta y el idioma", async ({ page }) => {
   await page.goto("es/");
-  await page.getByRole("link", { name: "proyectos" }).click();
+  await page
+    .locator("#hero")
+    .getByRole("link", { name: "proyectos", exact: true })
+    .click();
   await expect(page).toHaveURL(/\/ektl\.dev\/es\/projects\/$/);
 
   await page.goBack();
@@ -79,7 +82,10 @@ test("atrás y adelante conservan la ruta y el idioma", async ({ page }) => {
 test("la navegación funciona con movimiento reducido", async ({ page }) => {
   await page.emulateMedia({ reducedMotion: "reduce" });
   await page.goto("en/");
-  await page.getByRole("link", { name: "projects" }).click();
+  await page
+    .locator("#hero")
+    .getByRole("link", { name: "projects", exact: true })
+    .click();
 
   await expect(page).toHaveURL(/\/ektl\.dev\/en\/projects\/$/);
   expect(
