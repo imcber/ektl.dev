@@ -4,7 +4,7 @@
     "name": " Bernardo",
     "rest": "",
     "alias": "",
-    "profile": "I'm a full-stack developer with seven years of experience building solutions.",
+    "profile": "I'm a software engineer with seven years of experience building scalable web solutions.",
     "projects": "projects",
     "about": " more about me",
     "tooltip": "It is the name I take as Dungeon Master",
@@ -12,7 +12,7 @@
   },
   "contact": {
     "touch": "Get in touch",
-    "description": "Have a project, an opportunity, or a technical challenge? Let's talk about full-stack development, software architecture, and integrations.",
+    "description": "Have a project, an opportunity, or a technical challenge? Let's talk about development, software architecture, and integrations.",
     "resume": "Download resume",
     "social": [
       {

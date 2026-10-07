@@ -4,7 +4,7 @@
     "name": " Bernardo",
     "rest": "",
     "alias": "",
-    "profile": "Soy desarrollador full-stack con siete años creando soluciones de alto impacto.",
+    "profile": "Soy un ingeniero en software con siete años desarollando soluciones.",
     "projects": "proyectos",
     "about": " quien soy",
     "tooltip": "Es el nombre que tomo como Dungeon Master",
@@ -12,7 +12,7 @@
   },
   "contact": {
     "touch": "Ponte en contacto",
-    "description": "¿Tienes un proyecto, una oportunidad o un reto técnico? Conversemos sobre desarrollo full-stack, arquitectura de software e integraciones.",
+    "description": "¿Tienes un proyecto, una oportunidad o un reto técnico? Conversemos sobre desarrollo, arquitectura de software e integraciones.",
     "resume": "Descarga CV",
     "social": [
       {
